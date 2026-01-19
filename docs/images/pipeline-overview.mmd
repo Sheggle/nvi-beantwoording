@@ -1,0 +1,10 @@
+flowchart LR
+    A[NvI Vragen] --> B[Section Matcher]
+    C[Inkoopbeleid] --> B
+    B --> D[Context Builder]
+    D --> E[LLM Generator]
+    E --> F[Antwoord + Confidence]
+
+    style A fill:#e1f5fe
+    style C fill:#e1f5fe
+    style F fill:#c8e6c9

@@ -1,0 +1,139 @@
+{
+  "metadata": {
+    "domain": "GGZ",
+    "generated_at": "2026-01-19T14:51:17.035054",
+    "total_questions": 10,
+    "model": "gpt-4.1-nano"
+  },
+  "statistics": {
+    "confidence_counts": {
+      "high": 1,
+      "medium": 2,
+      "low": 6,
+      "unanswerable": 1
+    },
+    "confidence_percentages": {
+      "high": 10.0,
+      "medium": 20.0,
+      "low": 60.0,
+      "unanswerable": 10.0
+    },
+    "alert_high_unanswerable": false
+  },
+  "answers": [
+    {
+      "section_nr": "",
+      "question": "De tarief afslag op Wlz-Wonen 1 en 2 is onvoldoende transparant. Hoe is deze tot stand gekomen? Hoe is onderzocht of de tarieven van Wlz-Wonen 1 en 2 nog kostendekkend zijn?",
+      "answer": "De beleidstekst bevat geen specifieke informatie over hoe de tariefafslag op Wlz-Wonen 1 en 2 tot stand is gekomen of of er onderzoek is gedaan naar de kostendekkendheid van deze tarieven.",
+      "confidence": "unanswerable",
+      "source_sections": [
+        "1.3.2",
+        "2.3.2"
+      ],
+      "reasoning": "De verstrekte tekst vermeldt geen details over de totstandkoming van de tariefafslag op Wlz-Wonen 1 en 2 of onderzoek naar de kostendekkendheid ervan. Daarom kan deze vraag niet volledig worden beantwoord op basis van de gegeven beleidstekst.",
+      "original_answer": "De NZa is verantwoordelijk voor het vaststellen van de tarieven per prestatie. De door het zorgkantoor geboden tariefpercentages zijn bepaald volgens de methodiek zoals toegelicht in bijlage 7. De uitkomst van de methodiek is ook na het toepassen van op- en afslagen nog steeds valide. Namelijk, het aandeel van de GGZ aanbieders die een verwacht positief resultaat behaalt blijft 75%. Zie paragraaf 2.3.2."
+    },
+    {
+      "section_nr": "",
+      "question": "Het door u aangeboden format voor de Nota van Inlichtingen biedt helaas niet de mogelijkheid om over het voorwoord en managementsamenvatting vragen te stellen. Kunt u dit aanpassen?",
+      "answer": "De beleidstekst bevat geen informatie over de mogelijkheid om vragen te stellen over het voorwoord en de managementsamenvatting van het format voor de Nota van Inlichtingen. Daarom kan ik geen wijziging of aanpassing aanbevelen op basis van de verstrekte tekst.",
+      "confidence": "low",
+      "source_sections": [
+        "6.2",
+        "6.5"
+      ],
+      "reasoning": "De tekst vermeldt dat vragen over het inkoopbeleid en de procedure kunnen worden gesteld via het formulier en dat de Nota van Inlichtingen antwoorden bevat op vragen die voor iedereen van belang zijn. Er wordt niet specifiek ingegaan op de inhoud van het format of op de mogelijkheid om vragen te stellen over het voorwoord en de samenvatting. Daarom is er geen expliciete informatie beschikbaar om deze vraag volledig te beantwoorden.",
+      "original_answer": "Dat kan helaas niet, wel kunt u de vraag stellen bij de specifieke paragraaf in het inkoopbeleid waar het thema wordt toegelicht."
+    },
+    {
+      "section_nr": "",
+      "question": "U geeft aan dat Bijlage 6 Voorschrift zorgtoewijzing volgt na publicatie. Daarmee is het onmogelijk om zicht te hebben op hetgeen artikel 1, lid 1 van deel III (zorglevering) en artikel 6 van deel III (zorgweigering en - beëindiging) voor Zorgaanbieders zou kunnen betekenen. Op welke wijze wordt de Zorgaanbieder in staat gesteld om vragen over dit Voorschrift te stellen nu dit niet kan d.m.v. de Nota van Inlichting en op welke wijze kan zij eventueel inhoudelijk bezwaar tegen dit voorschrift aantekenen?",
+      "answer": "De verstrekte beleidstekst bevat geen specifieke informatie over de wijze waarop zorgaanbieders vragen kunnen stellen over het Voorschrift Zorgtoewijzing of hoe zij inhoudelijk bezwaar kunnen maken tegen dit voorschrift. Daarom is het niet mogelijk om een volledig antwoord te geven op basis van de beschikbare tekst.",
+      "confidence": "low",
+      "source_sections": [
+        "2.3.5",
+        "6.9.1",
+        "1.5.1"
+      ],
+      "reasoning": "De tekst vermeldt dat Bijlage 6 volgt na publicatie en beschrijft niet expliciet de procedures voor vragen of bezwaar tegen het Voorschrift Zorgtoewijzing, waardoor de informatie onvolledig is voor een definitief antwoord.",
+      "original_answer": "Het voorschrift zorgtoewijzing wordt elk jaar geactualiseerd op geldende wet- en regelgeving en bevat geen inkoopvoorwaarden."
+    },
+    {
+      "section_nr": "",
+      "question": "U schrijft dat Zilveren Kruis de mogelijkheid heeft om het zorginkoopbeleid met tweemaal een jaar te verlengen. Kunt u aangeven welke criteria u hiervoor aanhoudt?",
+      "answer": "De criteria voor het verlengen van de overeenkomst met twee keer een jaar zijn dat er geen bijzonderheden worden geconstateerd in de beoordeling van de zorgaanbieder en dat de bestaande zorgaanbieder het hele kalenderjaar 2023 een overeenkomst heeft gehad. In dat geval is de overeenkomst voor drie jaar (2024-2026) met de mogelijkheid tot twee keer een verlenging van één jaar per keer.",
+      "confidence": "high",
+      "source_sections": [
+        "6.9.2"
+      ],
+      "reasoning": "De informatie uit sectie 6.9.2 geeft duidelijk aan dat bij geen bijzonderheden in de beoordeling en bij een volledige overeenkomst in 2023, de zorgaanbieder in aanmerking komt voor een overeenkomst voor drie jaar met twee mogelijke eenjarige verlengingen.",
+      "original_answer": "Zilveren Kruis onderzoekt in 2026 of haar beleid nog voldoende aansluit bij de ontwikkeling van de GGZ en maatschappelijke trends en ontwikkelingen. Als wij het beleid willen"
+    },
+    {
+      "section_nr": "",
+      "question": "Verder is onduidelijk of een Zorgaanbieder die verlenging moet accepteren en onder welke voorwaarden die verlenging dan geaccepteerd moet/kan worden. Kunt u dit toelichten?",
+      "answer": "De verstrekte beleidstekst bevat geen specifieke informatie over de voorwaarden waaronder een zorgaanbieder een verlenging moet accepteren of kan accepteren. Het behandelt voornamelijk de inschrijvings- en contracteerprocedures, prestatieafspraken en regionale ontwikkeling, maar niet expliciet de verlengingsvoorwaarden.",
+      "confidence": "low",
+      "source_sections": [
+        "6.8.4"
+      ],
+      "reasoning": "De tekst uit sectie 6.8.4 beschrijft de inschrijvingsvereisten en documenten voor bestaande en nieuwe zorgaanbieders, maar bevat geen informatie over de voorwaarden voor het accepteren van een verlenging van een overeenkomst of zorgcontract.",
+      "original_answer": "voortzetten, dan heeft Zilveren Kruis inderdaad de gelegenheid om dat tweemaal een jaar te verlengen (2027 en 2028). Dat geldt overigens niet voor de overeenkomst. Zorgaanbieders kunnen dan opnieuw de afweging maken of ze zich willen inschrijven voor een Wlz-overeenkomst."
+    },
+    {
+      "section_nr": "1.1",
+      "question": "Gesteld wordt dat een neveneffect van eigen regie kan zijn dat de zorgvraag van een cliën afneemt. (Hoe) wordt deze aanname getoetst?",
+      "answer": "De tekst vermeldt dat een neveneffect van eigen regie kan zijn dat de zorgvraag van een cliënt afneemt omdat de zorg meer op maat wordt geleverd, maar geeft geen specifieke informatie over hoe deze aanname wordt getoetst.",
+      "confidence": "low",
+      "source_sections": [
+        "1.1"
+      ],
+      "reasoning": "De beleidstekst noemt dat een neveneffect van herstelgericht werken en eigen regie kan zijn dat de zorgvraag afneemt, maar beschrijft niet hoe deze aanname wordt getoetst. Daarom is de informatie beperkt en kan niet volledig worden bevestigd.",
+      "original_answer": "Uit wetenschappelijk onderzoek blijkt dat de t               zorgvraag van cliënten kan afnemen door herstelgericht werken en het bevorderen van zelfredzaamheid."
+    },
+    {
+      "section_nr": "1.1",
+      "question": "Gesteld wordt dat met arbeidsbesparende innovaties meer cliënten geholpen kunnen worden. Het blijkt echter met de oplopende personeelstekorten al een enorme uitdaging om de huidige cliëntpopulatie van passende zorg voorzien. Houdt het zorgkantoor rekening met de waarschijnlijkheid dat de verwachting dat met arbeidsbesparende innovaties meer cliënten (nominaal gezien) kunnen worden geholpen niet realistisch is?",
+      "answer": "De beleidstekst vermeldt dat de snelheid van implementatie en opschaling van innovaties omhoog moet, omdat de huidige situatie niet volstaat en meer impact vereist. Het benadrukt dat de tijd van vrijblijvend innoveren voorbij is en dat zorgaanbieders arbeidsbesparende innovaties moeten implementeren om meer cliënten te helpen. Er wordt geen expliciete vermelding gemaakt dat het zorgkantoor rekening houdt met de waarschijnlijkheid dat deze verwachting niet realistisch is, maar de nadruk ligt op het belang van versnelde implementatie en opschaling.",
+      "confidence": "medium",
+      "source_sections": [
+        "1.1"
+      ],
+      "reasoning": "De tekst benadrukt dat de implementatie en opschaling van innovaties sneller moeten plaatsvinden om meer impact te hebben, maar geeft geen expliciete bevestiging dat het zorgkantoor rekening houdt met de onrealistische verwachting dat meer cliënten geholpen kunnen worden. Het legt de nadruk op het belang van innovatie en opschaling, niet op de haalbaarheid ervan in de huidige situatie.",
+      "original_answer": "Het zorgkantoor maakt zich ook zorgen over de tekorten van beschikbaar zorgpersoneel. Innovatie alleen zal hiervoor niet het enige antwoord bieden. Ook bijvoorbeeld een kritische houding over het te              bieden van (intramurale) zorg, het samenwerken met andere aanbieders en optimaliseren van personeelsinzet zal onverminderd noodzakelijk zijn."
+    },
+    {
+      "section_nr": "1.1",
+      "question": "Indien er aanvullend inkoopbeleid wordt gepubliceerd, wordt er dan ook weer een NvI ingericht?",
+      "answer": "De beleidstekst vermeldt niet expliciet of er een NvI wordt ingericht bij de publicatie van aanvullend inkoopbeleid. Het geeft aan dat de ontwikkeling van aanvullend inkoopbeleid afhankelijk is van de uitkomsten van landelijke ontwikkelingen en kostenonderzoeken, maar zegt niet of er een NvI wordt ingericht.",
+      "confidence": "low",
+      "source_sections": [
+        "1.1"
+      ],
+      "reasoning": "De tekst bevat geen specifieke informatie over de procedure voor het inrichten van een NvI bij publicatie van aanvullend inkoopbeleid, waardoor de betrouwbaarheid laag is.",
+      "original_answer": "Ja, dan wordt er in principe een NvI ingericht."
+    },
+    {
+      "section_nr": "1.1",
+      "question": "U geeft aan dat u mogelijk aanvullend inkoopbeleid publiceert aan de hand van de uitkomsten van de bestuurlijke ontwikkelingen die worden gemaakt met betrekking tot de instroom en het kostenonderzoek. Betekent publiceren in dit geval dat u eenzijdig publi of hebben gecontracteerde aanbieders hier nog invloed op? kun u toelichten hoe dat proces eruit gaat zien en kunt u bevestigen dat besluitvorming hierin niet eenzijdig is?",
+      "answer": "Het beleidstekst vermeldt niet expliciet hoe het proces van publicatie van aanvullend inkoopbeleid eruit zal zien of of gecontracteerde aanbieders hier invloed op hebben. Het geeft aan dat Zilveren Kruis de uitkomsten van landelijke ontwikkelingen, zoals het kostenonderzoek en bestuurlijke afspraken, zal volgen en op basis daarvan mogelijk aanvullend inkoopbeleid zal publiceren. Het besluitvormingsproces wordt niet beschreven als eenzijdig, en er wordt geen bevestiging gegeven dat besluitvorming niet eenzijdig is. Daarom kan niet met zekerheid worden vastgesteld dat het proces inclusief of exclusief invloed van aanbieders is.",
+      "confidence": "low",
+      "source_sections": [
+        "1.1"
+      ],
+      "reasoning": "De tekst vermeldt dat Zilveren Kruis de landelijke ontwikkelingen volgt en op basis daarvan mogelijk aanvullend beleid publiceert, maar geeft geen details over het proces of de invloed van aanbieders op dat proces. Er wordt geen expliciete bevestiging gegeven dat besluitvorming niet eenzijdig is.",
+      "original_answer": "Het zorgkantoor herijkt elk kalenderjaar of het zorginkoopbeleid nog passend is bij de dan geldende wet- en regelgeving. Voor de volledigheid en zorgvuldigheid geven wij aan dat het niet uitgesloten is dat - gezien de omvangrijke ceert           onderwerpen die spelen in de GGZ - een herijking kan plaatsvinden. Net als dit jaar zullen we belangrijke ontwikkelingen afstemmen met branchevertegenwoordigers en vertegenwoordigers van zorgaanbieders."
+    },
+    {
+      "section_nr": "1.1",
+      "question": "U schrijft dat de tijd van vrijblijvend innov voorbij is. Aansluitend schrijft u dat in de het implementeren van arbeidsbesparende innovaties vanzelfsprekend is. Het lijkt daar dat de nadruk ligt op een type innovatie name de arbeidsmatige. Klopt dit?",
+      "answer": "De tekst benadrukt dat zorgaanbieders in de GGZ arbeidsbesparende innovaties moeten implementeren, zodat meer cliënten geholpen kunnen worden. Het legt de nadruk op arbeidsbesparende innovaties, maar spreekt niet uit dat dit het enige type innovatie is. Het gaat vooral om het snel en effectief implementeren en opschalen van innovaties die impact hebben, waaronder arbeidsbesparende innovaties.",
+      "confidence": "medium",
+      "source_sections": [
+        "1.1"
+      ],
+      "reasoning": "De tekst noemt expliciet dat zorgaanbieders arbeidsbesparende innovaties moeten implementeren, maar spreekt niet uit dat dit het enige type innovatie is. Het benadrukt wel dat de snelheid van implementatie en opschaling moet toenemen, vooral voor innovaties die meer impact hebben.",
+      "original_answer": "eren            Dit is correct. Bij de innovaties leggen wij de focus GGZ             op arbeidsbesparing. mee lijk"
+    }
+  ]
+}

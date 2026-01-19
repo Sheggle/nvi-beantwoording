@@ -1,0 +1,21 @@
+flowchart TB
+    subgraph Input
+        NVI[NvI-GGZ-2024-2026.json<br/>202 vragen]
+        IKB[Inkoopbeleid-GGZ-2024-2026.json<br/>112 secties]
+    end
+
+    subgraph Processing
+        DL[Data Loader]
+        SM[Section Matcher<br/>- keyword index<br/>- section index]
+        AG[Answer Generator<br/>- OpenAI API<br/>- rate limiting]
+    end
+
+    subgraph Output
+        OUT[GGZ_answers.json<br/>- antwoorden<br/>- confidence levels<br/>- bronverwijzingen]
+    end
+
+    NVI --> DL
+    IKB --> DL
+    DL --> SM
+    SM --> AG
+    AG --> OUT

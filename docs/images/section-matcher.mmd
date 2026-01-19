@@ -1,0 +1,13 @@
+flowchart TD
+    Q[Vraag met sectie X.Y.Z] --> T1{Tier 1: Direct Match}
+    T1 -->|Gevonden| R1[Sectie X.Y.Z + subsecties]
+    T1 -->|Niet gevonden| T2{Tier 2: Parent Fallback}
+    T2 -->|Gevonden| R2[Sectie X.Y + subsecties]
+    T2 -->|Niet gevonden| T3{Tier 3: Keyword Match}
+    T3 --> R3[Top 5 secties op keyword-overlap]
+
+    Q2[Vraag zonder sectie] --> T3
+
+    style R1 fill:#c8e6c9
+    style R2 fill:#fff9c4
+    style R3 fill:#ffecb3

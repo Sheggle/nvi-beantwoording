@@ -34,6 +34,8 @@ class GeneratedAnswer(BaseModel):
     source_sections: list[str]
     reasoning: str | None = None
     original_answer: str | None = None  # For comparison
+    correspondence_score: int | None = None
+    evaluation_reasoning: str | None = None
 
 
 class LLMResponse(BaseModel):
@@ -43,3 +45,10 @@ class LLMResponse(BaseModel):
     confidence: AnswerConfidence
     source_sections: list[str]
     reasoning: str
+
+
+class EvaluationResult(BaseModel):
+    """Result of post-hoc correspondence evaluation."""
+
+    correspondence_score: Literal[1, 2, 3, 4, 5]
+    evaluation_reasoning: str

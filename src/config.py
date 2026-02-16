@@ -10,7 +10,8 @@ class Settings(BaseModel):
 
     # API Configuration
     openai_api_key: str = Field(default_factory=lambda: os.environ.get("OPENAI_API_KEY", ""))
-    model: str = "gpt-4.1-nano"
+    model: str = "gpt-4.1-mini"
+    evaluation_model: str = "gpt-4.1-mini"
 
     # Rate limiting
     max_concurrent_requests: int = 10

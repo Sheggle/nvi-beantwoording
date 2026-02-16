@@ -13,6 +13,7 @@ from .models import (
 )
 from .config import Settings
 from .section_matcher import SectionMatcher, MatchResult
+from .background_context import BACKGROUND_CONTEXT
 
 
 class TokenBucket:
@@ -48,20 +49,31 @@ class AnswerGenerator:
 
     SYSTEM_PROMPT = """Je bent een expert op het gebied van het zorginkoopbeleid van Zilveren Kruis voor de Wet langdurige zorg (Wlz).
 
-Je taak is om vragen uit de Nota van Inlichtingen te beantwoorden op basis van de verstrekte beleidstekst.
+Je taak is om vragen uit de Nota van Inlichtingen te beantwoorden namens het zorgkantoor. Gebruik de verstrekte achtergrondkennis en beleidstekst.
 
 Richtlijnen:
-- Beantwoord de vraag met informatie uit de verstrekte beleidstekst
-- Geef een nuttig antwoord waar mogelijk, ook als niet alle details expliciet vermeld staan
-- Als specifieke details ontbreken, geef aan wat WEL in de tekst staat en wat ontbreekt
-- Wees accuraat en verwijs naar specifieke secties
-- Schrijf in het Nederlands, beknopt maar volledig
+- Antwoord in 1-4 zinnen. Wees direct en stellig, vermijd hedging en overmatige uitleg.
+- Als een vraag buiten het bereik van het zorgkantoor valt (bijv. NZa-tarieven, tariefstructuur), verwijs door naar de juiste instantie in plaats van te speculeren.
+- Gebruik de achtergrondkennis om vragen correct te kaderen binnen de rolverdeling NZa/zorgkantoor/VWS.
+- Wees accuraat en verwijs naar specifieke secties waar relevant.
+- Schrijf in het Nederlands.
+
+Voorbeelden van het gewenste antwoordniveau:
+
+Vraag: Wanneer er twee contracten worden aangevraagd, moeten er dan ook twee x 3 nieuwe succesvolle innovatieve initiatieven geïmplementeerd worden?
+Antwoord: Nee. We verwachten dat u voor uw organisatie als geheel 3 nieuwe succesvolle initiatieven implementeert.
+
+Vraag: Hoe gaan zorgaanbieders de noodzakelijke investeringen en kosten voor verduurzaming vergoed krijgen?
+Antwoord: Het zorgkantoor gaat niet over de maximum tarieven van de NZa. Eventuele vragen daarover verzoeken wij u te stellen aan de NZa. Zilveren Kruis vergoedt 100% van de NHC/NIC-component. Meer kan en mag niet.
+
+Vraag: Betekent het werken met integrale tarieven dat de componenten loon, materieel, NHC en NIC onderling uitwisselbaar zijn?
+Antwoord: De NZa stelt de tarieven vast. Zij geeft aan dat de Wlz volledig integrale tarieven kent: één tarief waarvan alles bekostigd moet worden.
 
 Betrouwbaarheidsniveaus:
-- high: De kernvraag kan worden beantwoord met de tekst
+- high: De kernvraag kan worden beantwoord met de tekst en/of achtergrondkennis
 - medium: Relevante informatie beschikbaar, maar belangrijke onderdelen ontbreken
 - low: Alleen zijdelings gerelateerde informatie beschikbaar
-- unanswerable: Geen relevante informatie in de tekst"""
+- unanswerable: Geen relevante informatie in de tekst of achtergrondkennis"""
 
     def __init__(self, settings: Settings | None = None):
         self.settings = settings or Settings()
@@ -82,15 +94,21 @@ Betrouwbaarheidsniveaus:
         section_info = f" (sectie {question.section})" if question.section else ""
 
         if not context:
-            return f"""BELEIDSTEKST:
+            return f"""ACHTERGRONDKENNIS:
+{BACKGROUND_CONTEXT}
+
+BELEIDSTEKST:
 Geen relevante secties gevonden in het inkoopbeleid.
 
 VRAAG{section_info}:
 {question.question}
 
-Geef aan dat deze vraag niet beantwoord kan worden op basis van het beschikbare inkoopbeleid."""
+Beantwoord op basis van de achtergrondkennis, of geef aan dat deze vraag niet beantwoord kan worden."""
 
-        return f"""BELEIDSTEKST:
+        return f"""ACHTERGRONDKENNIS:
+{BACKGROUND_CONTEXT}
+
+BELEIDSTEKST:
 {context}
 
 VRAAG{section_info}:
@@ -147,7 +165,7 @@ VRAAG{section_info}:
                     ],
                     response_format=LLMResponse,
                     temperature=0.1,
-                    max_tokens=1000,
+                    max_tokens=500,
                 )
 
                 # Response is already parsed into LLMResponse

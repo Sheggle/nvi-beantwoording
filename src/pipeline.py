@@ -11,6 +11,7 @@ from .config import Settings
 from .data_loader import DataLoader
 from .section_matcher import SectionMatcher
 from .answer_generator import AnswerGenerator
+from .evaluator import Evaluator
 
 
 class Pipeline:
@@ -20,6 +21,7 @@ class Pipeline:
         self.settings = settings or Settings()
         self.data_loader = DataLoader(self.settings)
         self.answer_generator = AnswerGenerator(self.settings)
+        self.evaluator = Evaluator(self.settings)
 
     async def process_domain(
         self,
@@ -113,11 +115,23 @@ class Pipeline:
         unanswerable_pct = confidence_pcts.get("unanswerable", 0)
         alert = unanswerable_pct > 30
 
-        return {
+        stats = {
             "confidence_counts": confidence_counts,
             "confidence_percentages": confidence_pcts,
             "alert_high_unanswerable": alert,
         }
+
+        # Evaluation statistics
+        scores = [a.correspondence_score for a in answers if a.correspondence_score is not None]
+        if scores:
+            score_distribution = {i: scores.count(i) for i in range(1, 6)}
+            stats["evaluation_statistics"] = {
+                "mean_correspondence": round(sum(scores) / len(scores), 2),
+                "evaluated_count": len(scores),
+                "score_distribution": score_distribution,
+            }
+
+        return stats
 
     def print_statistics(self, answers: list[GeneratedAnswer]) -> None:
         """Print statistics about the generated answers."""
@@ -136,11 +150,20 @@ class Pipeline:
         if stats["alert_high_unanswerable"]:
             print("\n[ALERT] More than 30% of questions are unanswerable!")
 
+        if "evaluation_statistics" in stats:
+            eval_stats = stats["evaluation_statistics"]
+            print(f"\nCorrespondence evaluation ({eval_stats['evaluated_count']} evaluated):")
+            print(f"  Mean score: {eval_stats['mean_correspondence']}/5")
+            print("  Distribution:")
+            for score, count in eval_stats["score_distribution"].items():
+                print(f"    {score}: {count}")
+
     async def run(
         self,
         domain: str,
         limit: int | None = None,
         save: bool = True,
+        evaluate: bool = True,
     ) -> list[GeneratedAnswer]:
         """Run the full pipeline for a domain.
 
@@ -148,6 +171,7 @@ class Pipeline:
             domain: The domain code (e.g., 'GGZ', 'GZ', 'VV')
             limit: Optional limit on number of questions to process
             save: Whether to save results to file
+            evaluate: Whether to run post-hoc correspondence evaluation
 
         Returns:
             List of GeneratedAnswer objects
@@ -155,9 +179,17 @@ class Pipeline:
         def progress(completed: int, total: int) -> None:
             print(f"\rProcessing: {completed}/{total} ({completed/total*100:.1f}%)", end="", flush=True)
 
+        def eval_progress(completed: int, total: int) -> None:
+            print(f"\rEvaluating: {completed}/{total} ({completed/total*100:.1f}%)", end="", flush=True)
+
         print(f"Starting pipeline for domain: {domain}")
         answers = await self.process_domain(domain, limit, progress)
         print()  # Newline after progress
+
+        if evaluate:
+            print("Starting post-hoc evaluation...")
+            await self.evaluator.evaluate_all_answers(answers, eval_progress)
+            print()  # Newline after progress
 
         self.print_statistics(answers)
 

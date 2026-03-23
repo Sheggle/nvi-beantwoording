@@ -42,10 +42,53 @@ BELANGRIJK JARGON:
 - "Ongeclusterd": zorg geleverd in zelfstandige woningen (niet op een zorglocatie) — geen NHC-component.
 - "Geclusterd": zorg geleverd op/nabij een zorglocatie — wel NHC-component.
 
+NZA — PRESTATIECODES EN BELEIDSREGELS:
+- De NZa stelt de prestatiecodes vast en bepaalt de inhoud daarvan. Het zorgkantoor kan de prestatiecodes en de hoogte daarvan niet zelf wijzigen.
+- Zorgprestaties, beleidsregels en prestatiebeschrijvingen zijn te vinden op de website van de NZa (open.nza.nl).
+- De NZa publiceert jaarlijks rond 1 juli de definitieve maximumtarieven.
+- Zorgkantoren moeten vóór 15 november budgetformulieren bij de NZa indienen — dit creëert tijdsdruk in de inkoopprocedure.
+
+VOORSCHRIFT ZORGTOEWIJZING:
+- Bijlage 6 van het inkoopbeleid betreft het Voorschrift Zorgtoewijzing.
+- Dit wordt jaarlijks geactualiseerd door de NZa op geldende wet- en regelgeving.
+- Het Voorschrift bevat GEEN inkoopvoorwaarden en valt buiten de NvI-procedure.
+- De nieuwe versie wordt uiterlijk op 1 december gepubliceerd.
+- Het Voorschrift bevat o.a. een vertaaltabel voor sectorvreemde prestaties en definities van zorgprestaties.
+
+HARDHEIDSCLAUSULE:
+- De hardheidsclausule is bedoeld voor individuele zorgaanbieders die ondanks doelmatig werken de zorg niet binnen het richttarief kunnen leveren.
+- Doelmatig werken is een voorwaarde voor een beroep op de hardheidsclausule.
+- De procedure en deadlines staan beschreven in hoofdstuk 7 / sectie 7.9.5 van het inkoopbeleid.
+
+VASTGOED (NHC/ONGECLUSTERD/GECLUSTERD):
+- "Voldoende geschikt vastgoed" = voldoende vastgoed dat voldoet aan vereisten op het gebied van veiligheid, duurzaamheid en geschiktheid voor Wlz-zorg.
+- Ongeclusterde setting: zorg in zelfstandige woningen, GEEN huisvestingscomponent (NHC) — dus geen NHC-verantwoording.
+- Geclusterde setting: zorg op/nabij een zorglocatie, WEL NHC-component — hier geldt verantwoording over duurzaamheid en vastgoed.
+- NHC-verantwoording geldt alleen voor intramurale zorg en geclusterd VPT.
+- Bij uitsluitend MPT/VPT in ongeclusterde setting is de huisvestingscomponent niet van toepassing.
+- Bij coöperaties is de coöperatie het aanspreekpunt voor het zorgkantoor.
+
+TARIEFPERCENTAGES EN UITZONDERINGEN:
+- Richttariefpercentages gelden voor de gehele beleidsperiode 2024-2026 tenzij anders vermeld.
+- Uitzondering: de prestatie 7VG (verblijf met gedragsproblematiek), waarvoor kostenonderzoeken nog lopen.
+- Er is geen overzicht van wijzigingen t.o.v. het voorgaande zorginkoopbeleid voorzien.
+
+SPIEGELINFORMATIE:
+- Zilveren Kruis stelt spiegelinformatie beschikbaar waarmee zorgaanbieders worden vergeleken.
+- De analyse en afspraken over uitkomsten maken onderdeel uit van het inkoopgesprek.
+- De analyse bevat geen herleidbare bedrijfsvoeringsinformatie.
+- Het gaat om gezamenlijke duiding (zorgaanbieder + inkoper) van de data, waarbij ook verklarende factoren worden meegenomen.
+
 PROCEDURELE KENNIS:
 - Het zorginkoopbeleid 2024-2026 kan tweemaal met een jaar verlengd worden (naar 2027 en 2028). Dit is een eenzijdige bevoegdheid van het zorgkantoor. Na afloop kunnen zorgaanbieders opnieuw inschrijven.
 - Het zorgkantoor herijkt elk kalenderjaar of het zorginkoopbeleid nog passend is, in afstemming met branchevertegenwoordigers en zorgaanbieders.
-- Het Voorschrift Zorgtoewijzing wordt jaarlijks geactualiseerd door de NZa op geldende wet- en regelgeving. Het bevat geen inkoopvoorwaarden en valt buiten de NvI-procedure.
 - Als er aanvullend inkoopbeleid wordt gepubliceerd, wordt er in principe een NvI ingericht.
 - Na inschrijving heeft het zorgkantoor de bevoegdheid (maar niet de verplichting) om een zorgaanbieder te vragen zijn inschrijving toe te lichten. De zorgaanbieder heeft dan vijf werkdagen om te reageren. Uit deze toelichting kunnen geen rechten of verplichtingen worden afgeleid.
+- Het NvI-format is vastgesteld; het is niet mogelijk om een voorwoord of managementsamenvatting toe te voegen. Vragen dienen bij de betreffende sectie gesteld te worden.
+
+VPT/MPT GRENS:
+- Er is geen harde grens voor wanneer VPT-zorg overgaat naar MPT-declaratie.
+- MPT-uren kunnen per periode variëren afhankelijk van de zorgbehoefte.
+- In alle redelijkheid wordt verwacht dat de zorgaanbieder een passende beoordeling maakt.
+- Doelmatigheid is het leidende principe bij het bepalen van de juiste zorginzet.
 """.strip()

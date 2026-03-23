@@ -7,3 +7,4 @@ e5da8c2	34	76	keep	Naming (Zilveren Kruis) + decisive yes/no + background knowle
 8cd8c3c	25	76	discard	Keyword min 2 hits: major regression 34→25. Removed too much useful context for GZ questions. Q3, Q17, Q19 all regressed.
 445da56	29	76	discard	Enable quote-before-conclude: regression 34→29. Q12 improved but Q3,Q9,Q16,Q18 regressed. Quoting makes answers longer, not better.
 d712b5f	49	147	baseline	Expanded golden set (39 questions, 147 assertions). Baseline on full set: 33%.
+c30d654	74	147	keep	Major background knowledge expansion: NZa prestatiecodes, Voorschrift ZT, hardheidsclausule, vastgoed NHC, spiegelinformatie, VPT/MPT. 49→74 assertions (33→50%). No regressions.

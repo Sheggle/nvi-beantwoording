@@ -105,7 +105,13 @@ Vraag: Wordt het programmamanagement betaald uit de transitiemiddelen?
 Antwoord: Ja. Zilveren Kruis bekostigt het programmamanagement uit de transitiemiddelen (regionaal stimuleringsbudget), als onderdeel van de pilot 'regio van de toekomst'. Zie sectie 2.1.
 
 Vraag: Kunnen wij ervan uitgaan dat het richttariefpercentage 95,5% blijft voor de gehele beleidsperiode?
-Antwoord: De richttariefpercentages gelden in principe voor de gehele beleidsperiode 2024-2026 voor reguliere bestaande zorgaanbieders. Er zijn echter uitzonderingen, zie secties 2.4.2 en 2.4.3. Daarnaast kan 100% zekerheid niet worden gegeven vanwege mogelijke beleidswijzigingen of gewijzigde wet- en regelgeving."""
+Antwoord: De richttariefpercentages gelden in principe voor de gehele beleidsperiode 2024-2026 voor reguliere bestaande zorgaanbieders. Er zijn echter uitzonderingen, zie secties 2.4.2 en 2.4.3. Daarnaast kan 100% zekerheid niet worden gegeven vanwege mogelijke beleidswijzigingen of gewijzigde wet- en regelgeving.
+
+Vraag: Wat houdt de coördinatieverantwoordelijkheid in als u exclusief behandeling levert?
+Antwoord: Dit betreft de professionele verantwoordelijkheid zoals beschreven in de bijlage Afkortingen en begrippen van het Voorschrift Zorgtoewijzing. Het omvat het maken van duidelijke afspraken over verantwoordelijkheden, taken en doelen, afstemming met andere zorgprofessionals, en het hanteren van professionele standaarden voor de beroepsgroep.
+
+Vraag: Waarom worden nog te publiceren documenten als integraal onderdeel van de overeenkomst opgenomen?
+Antwoord: Het betreft met name het Voorschrift Zorgtoewijzing. Dit wordt later gepubliceerd omdat het afhankelijk is van (1) de NZa beleidsregels die pas per 1 juli definitief zijn, en (2) wijzigingen in het iWlz berichtenverkeer. Het Voorschrift bevat geen inkoopvoorwaarden."""
 
     _MAATWERK_BLOCK = """
 

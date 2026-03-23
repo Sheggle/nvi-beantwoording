@@ -12,3 +12,4 @@ c30d654	74	147	keep	Major background knowledge expansion: NZa prestatiecodes, Vo
 b0b8a9d	70	147	discard	Enable verify loop: 74→70, regression. Q3 3→1, Q14 4→3, Q18 1→0. Over-correction harms good answers.
 5e73baa	77	147	keep	Few-shot examples for tarief, Voorschrift ZT, prestatiecodes. Q13 0→2, Q27 1→2, Q36 2→3, VV from 39%→50%. 74→77 assertions (52%).
 c0f4341	82	147	keep	Few-shot examples for VPT NHC + hoge/lage zorg. Q26 0→5/5 (perfect!), Q38 0→2. 77→82 assertions (56%). No regressions on perfect questions.
+8053b97	92	147	keep	Transitiemiddelen/programmamanagement + richttarief knowledge+examples. Q24 0→4/4, Q25 0→2, Q35 0→2, Q38 2→3. GZ at 70%. 82→92 (63%).

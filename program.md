@@ -1,17 +1,35 @@
 # NvI-Beantwoording Autonomous Improvement Program
 
-You are an autonomous agent improving the NvI (Nota van Inlichtingen) answering system for Zilveren Kruis healthcare procurement. You work in a loop: run evaluations, analyze results against expert feedback, find the highest-impact issue, fix it, verify the fix, and repeat.
+You are an autonomous agent improving the NvI (Nota van Inlichtingen) answering system for Zilveren Kruis healthcare procurement. You work in a loop: run evaluations against a golden set, analyze failures, find the highest-impact issue, fix it, verify, and repeat.
 
 ## Context
 
-This system automatically answers care provider questions about Wlz (long-term care) procurement policies across three domains: GGZ (mental health), GZ (disability care), VV (nursing/elderly care). Experts have scored a subset of answers on a 1-5 scale. Current mean expert score: ~1.8. The goal is to improve this.
+This system automatically answers care provider questions about Wlz (long-term care) procurement policies across three domains: GGZ (mental health), GZ (disability care), VV (nursing/elderly care).
+
+## Golden set
+
+`golden_set.json` contains 20 expert-verified questions with:
+- **golden_answer**: The correct answer (in Dutch)
+- **key_assertions**: Verifiable checks that any correct answer must satisfy (e.g., "must reference bijlage 7", "must say nee")
+- **source_sections**: Which policy sections contain the answer
+
+The golden set is the ground truth. The metric is **assertions passed** — each question has 3-5 assertions, totaling ~75 assertions.
+
+### Golden set maintenance
+
+If the system produces an answer that **differs from the golden answer but is factually correct**, update the golden set:
+1. Read the relevant policy sections to verify
+2. If the system's answer is better or equally correct, update `golden_answer` and/or `key_assertions`
+3. Commit the golden set update separately with clear reasoning
+
+This prevents the golden set from becoming stale or blocking valid improvements.
 
 ## Setup
 
-1. Read codebase context: `README.md`, `docs/writeup.md`
-2. Ensure you're on `main` branch with a clean working tree
-3. Ensure `feedback/*.xlsx` files exist (expert-scored answers)
-4. Initialize `results.tsv` if it doesn't exist (tab-separated: `commit | mean_expert | n_scored | status | description`)
+1. Read codebase context: `README.md`, `src/answer_generator.py`, `src/section_matcher.py`
+2. Ensure you're on `main` branch with clean working tree
+3. Run baseline if no results exist: `uv run python scripts/eval_golden.py`
+4. Initialize `results.tsv` if empty
 
 ## What you can modify
 
@@ -23,90 +41,75 @@ This system automatically answers care provider questions about Wlz (long-term c
 - `src/config.py` — Settings, model choice, flags
 - `src/data_loader.py` — Data loading logic
 - `src/models.py` — Data models
-- `parsed_data/extra/` — Supplementary document chunks
+- `parsed_data/extra/` — Supplementary document chunks (add more reference material)
+- `golden_set.json` — Update if system produces a verifiably better answer
 
 ## What you CANNOT modify
 
-- `feedback/*.xlsx` — Expert feedback (ground truth)
+- `scripts/eval_golden.py` — The evaluation script
 - `parsed_data/NvI-*.json` — Source questions
 - `parsed_data/Inkoopbeleid-*.json` — Policy document sections
-- `scripts/eval_feedback.py` — Evaluation script
+- `feedback/*.xlsx` — Original expert feedback
 
-## Metric
+## Identified issues (from expert feedback)
 
-**Expert feedback score** (1-5) on the scored subset:
-- **5**: Same content & conclusion as reference answer
-- **4**: Same direction, minor differences
-- **3**: Partial overlap
-- **2**: Different approach but not contradictory
-- **1**: Contradictory or completely different
-
-Current baseline: ~1.8 mean across 39 scored questions.
-
-## Expert feedback: identified issues
-
-From the expert comments in the feedback files:
-
-### Issue 1: Missing appendix/bijlage content
-- "Bijlage 7 beter opnemen in de prompt"
+### Issue 1: Missing appendix/bijlage content (HIGH IMPACT)
+- "Bijlage 7 beter opnemen in de prompt" — tariff methodology
 - "Informatie over tarief en opslagen ontbreekt"
-- "Dit zou uit het inkoopbeleid te halen moeten zijn. Hoofdstuk 6"
-- **Root cause**: Supplementary docs (bijlage 7, 10, etc.) not being matched or included
-- **Affects**: GGZ, GZ, VV
+- **Root cause**: Supplementary docs (bijlage 7, 10) not matched or included
+- **Affected questions**: Q9 (bijlage 7, 75% norm), Q5 (voorschrift zorgtoewijzing), Q13 (NZa beleidsregels)
+- **Fix ideas**: Parse bijlage PDFs into supplementary_chunks.json, improve supplementary matching
 
-### Issue 2: Wrong section references
-- "Verwijst niet naar goede sectie"
-- "Model kijkt niet naar paragraaf 7"
-- "Beperkt zich in het antwoord teveel tot 1 sectie"
+### Issue 2: Wrong section references / too narrow matching (HIGH IMPACT)
+- "Verwijst niet naar goede sectie", "Model kijkt niet naar paragraaf 7"
+- "Beperkt zich teveel tot 1 sectie"
 - **Root cause**: Section matcher finds wrong sections or too few
-- **Affects**: GZ, VV
+- **Affected questions**: Q18 (should reference 6.18), Q6 (wrong interpretation), Q17 (missing passage)
+- **Fix ideas**: Broaden keyword matching, include parent+child sections, semantic similarity
 
-### Issue 3: Too verbose / not direct enough
-- "Bondiger formuleren"
-- "Geeft weer onnodige info"
-- **Root cause**: System prompt not strict enough on brevity
-- **Affects**: VV, GZ
+### Issue 3: Not decisive enough / too verbose
+- "Bondiger formuleren", "Geeft onnodige info"
+- "Gewoon nee teruggeven als iets niet te vinden is"
+- **Root cause**: System prompt too cautious, model hedges instead of answering directly
+- **Affected questions**: Q3, Q10, Q17, Q19
+- **Fix ideas**: Stricter prompt on brevity and directness, "if information is clearly stated, answer directly"
 
-### Issue 4: Procedure/process questions need external docs
-- "Check bij Charlotte of er document is procedure NvI"
-- Multiple questions about NvI procedures can't be answered from inkoopbeleid alone
-- **Root cause**: Missing source documents for procedural questions
-- **Affects**: GGZ
+### Issue 4: Doesn't interpret/infer from policy text
+- "Waarom interpreteert Model de tekst niet goed?"
+- "Af te leiden uit hoofdstuk" — answer is derivable but model doesn't connect the dots
+- **Root cause**: Model too literal, doesn't synthesize across sections
+- **Affected questions**: Q2, Q6 (jargon "domeinen" misunderstood), Q14
+- **Fix ideas**: Add domain glossary to background_context.py, teach jargon
 
-### Issue 5: Not interpreting/inferring from policy text
-- "Waarom interpreteert Model de tekst in inkoopbeleid niet goed?"
-- "Staat wel in inkoopbeleid. Af te leiden uit hoofdstuk"
-- **Root cause**: Model too literal, doesn't derive answers from indirect references
-- **Affects**: GZ, VV
+### Issue 5: Procedural questions lacking source docs
+- "Check Charlotte op procedures" — NvI process info not in inkoopbeleid
+- **Affected questions**: Q8, Q10, Q12, Q15, Q16
+- **Fix ideas**: Add procedural knowledge to background_context.py (NvI process, verlenging, voorschrift zorgtoewijzing timelines)
 
 ## The Loop
 
-Run this loop forever until interrupted:
+### Step 1: Run evaluation
 
-### Step 1: Run evaluation (if needed)
-
-If the current commit doesn't have results:
 ```bash
 cd /Users/ignacekonig/projects/nvi-beantwoording
-uv run python scripts/eval_feedback.py
+uv run python scripts/eval_golden.py
 ```
-This takes ~5 minutes (39 questions × 3 domains). Results go to `output/feedback_eval_*.json`.
 
-### Step 2: Analyze results
+Takes ~3-5 minutes (20 questions, ~75 assertion checks). Output: assertions passed/total per question.
 
-For each question, check:
-- Expert score vs AI-generated answer quality
-- Expert comments for specific actionable feedback
-- Which domains/sections are weakest
+### Step 2: Analyze failures
 
-Group issues by root cause (see "identified issues" above).
+For each failed assertion:
+- What did the system answer vs what was expected?
+- Is this a retrieval problem (wrong sections matched), a generation problem (right context but bad answer), or a knowledge gap (info not available)?
+- Check if the golden answer should be updated (system might be right)
 
-### Step 3: Pick highest impact cause
+### Step 3: Group and prioritize
 
-Choose the root cause that would improve the most questions. Prefer:
-1. Issues affecting many questions across domains
-2. Issues with clear actionable fixes (add missing data, fix matching)
-3. Structural fixes over prompt tuning
+Group failures by root cause (see identified issues above). Pick the cause that fixes the most assertions. Prefer:
+1. Retrieval fixes (section matching, supplementary docs) — most reliable
+2. Knowledge additions (background_context, supplementary chunks) — deterministic
+3. Prompt tuning — less predictable but can address interpretation issues
 
 ### Step 4: Branch and fix
 
@@ -114,47 +117,36 @@ Choose the root cause that would improve the most questions. Prefer:
 git checkout -b fix/<descriptive-name>
 ```
 
-Common fix types:
-- **Add missing supplementary content**: Parse bijlage PDFs, add chunks to `parsed_data/extra/supplementary_chunks.json`
-- **Improve section matching**: Better keyword extraction, semantic matching, broader section inclusion
-- **Tune system prompt**: Brevity instructions, interpretation guidance
-- **Add domain knowledge**: Expand `background_context.py` with domain-specific facts
-- **Enable/tune improvements**: Toggle `enable_*` flags, adjust improvement prompts
-
-### Step 5: Test the fix
+### Step 5: Test
 
 ```bash
-uv run python scripts/eval_feedback.py
+uv run python scripts/eval_golden.py
 ```
 
 ### Step 6: Evaluate
 
-Compare expert scores on feedback questions:
-- The fix is **kept** if mean expert-relevant score improves (even slightly)
-- The fix is **discarded** if scores decrease or no improvement
+- **Keep** if more assertions pass than before, with no regressions on previously passing assertions
+- **Discard** if assertions decrease or regressions appear
+- **Update golden set** if system produces a verifiably better answer
 
-### Step 7: Record and continue
+### Step 7: Record
 
 Append to `results.tsv`:
 ```
-<commit>\t<mean_score>\t<n_scored>\t<keep|discard>\t<description>
+<commit>\t<assertions_passed>\t<assertions_total>\t<status>\t<description>
 ```
-
-If **kept**: merge to main, this is the new baseline.
-If **discarded**: `git checkout main && git branch -D fix/<name>`.
 
 ### Step 8: LOOP
 
-Go back to Step 1. Never pause, never ask for confirmation.
+Merge if kept, discard if not. Go to Step 1. Never pause.
 
 ## Important rules
 
 - **NEVER PAUSE**: Run autonomously until interrupted.
-- **One fix per iteration**: Keep changes atomic.
-- **Commit before running**: Tie results to specific commits.
-- **Focus on expert-scored questions**: These 39 questions are the ground truth. Improving on them is what matters.
-- **Read expert comments carefully**: They contain specific, actionable guidance.
+- **One fix per iteration**: Keep changes atomic and isolatable.
+- **Commit before running**: Results must be tied to a commit.
+- **Verify golden set**: If system answer differs but is correct per policy text, update golden_set.json.
+- **Read the policy text**: Before writing fixes, read the actual Inkoopbeleid sections. Don't guess.
+- **Cross-domain**: Fixes should work across GGZ, GZ, VV — the matching and generation logic is shared.
 - **Track everything**: `results.tsv` is the experiment log.
-- **Time budget**: Each eval run takes ~5 min. Don't exceed 10 min.
-- **Keep it simple**: A targeted prompt change that fixes 5 questions beats a large refactor.
-- **Cross-domain awareness**: Fixes should ideally improve all three domains (GGZ, GZ, VV), not just one.
+- **Keep it simple**: A targeted fix that passes 5 more assertions beats a large refactor.

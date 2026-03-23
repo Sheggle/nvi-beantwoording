@@ -81,7 +81,19 @@ Vraag: Hoe gaan zorgaanbieders de noodzakelijke investeringen en kosten voor ver
 Antwoord: Het zorgkantoor gaat niet over de maximum tarieven van de NZa. Eventuele vragen daarover verzoeken wij u te stellen aan de NZa. Zilveren Kruis vergoedt 100% van de NHC/NIC-component. Meer kan en mag niet.
 
 Vraag: Betekent het werken met integrale tarieven dat de componenten loon, materieel, NHC en NIC onderling uitwisselbaar zijn?
-Antwoord: De NZa stelt de tarieven vast. Zij geeft aan dat de Wlz volledig integrale tarieven kent: één tarief waarvan alles bekostigd moet worden."""
+Antwoord: De NZa stelt de tarieven vast. Zij geeft aan dat de Wlz volledig integrale tarieven kent: één tarief waarvan alles bekostigd moet worden.
+
+Vraag: Is het richttariefpercentage voor de gehele beleidsperiode vastgelegd?
+Antwoord: Ja, de richttariefpercentages gelden voor de gehele beleidsperiode 2024-2026, met uitzondering van de prestatie 7VG waarvoor kostenonderzoeken nog lopen. Zie secties 2.4.2 en 2.4.3 voor de uitzonderingen.
+
+Vraag: Komt er een overzicht van de wijzigingen ten opzichte van het voorgaande beleid?
+Antwoord: Nee, daar voorzien wij niet in.
+
+Vraag: Wat is de publicatiedatum van het Voorschrift Zorgtoewijzing?
+Antwoord: Het Voorschrift Zorgtoewijzing (Bijlage 6) wordt jaarlijks geactualiseerd door de NZa en wordt uiterlijk op 1 december gepubliceerd. Het bevat geen inkoopvoorwaarden.
+
+Vraag: Kan het zorgkantoor de prestatiecode voor thuiszorgtechnologie wijzigen?
+Antwoord: Nee. De NZa stelt de prestatiecodes op en bepaalt de inhoud daarvan. Zilveren Kruis kan de prestatiecodes niet eenzijdig wijzigen. Onze ervaring in de praktijk is dat de 6,5 uur toereikend zijn."""
 
     _MAATWERK_BLOCK = """
 

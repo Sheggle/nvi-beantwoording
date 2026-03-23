@@ -25,6 +25,13 @@ class Settings(BaseModel):
     # Processing
     batch_size: int = 10
 
+    # Improvement flags
+    enable_maatwerk_examples: bool = False
+    enable_quote_before_conclude: bool = False
+    enable_verify_loop: bool = False
+    enable_calibrated_confidence: bool = False
+    enable_model_guided_retrieval: bool = False
+
     def get_nvi_path(self, domain: str) -> Path:
         """Get path to NvI JSON file for a domain."""
         return self.parsed_data_path / f"NvI-{domain}-2024-2026.json"
@@ -32,6 +39,10 @@ class Settings(BaseModel):
     def get_inkoopbeleid_path(self, domain: str) -> Path:
         """Get path to Inkoopbeleid JSON file for a domain."""
         return self.parsed_data_path / f"Inkoopbeleid-{domain}-2024-2026.json"
+
+    def get_supplementary_chunks_path(self) -> Path:
+        """Get path to supplementary chunks JSON file."""
+        return self.parsed_data_path / "extra" / "supplementary_chunks.json"
 
     def get_output_path(self, domain: str) -> Path:
         """Get path for output JSON file."""

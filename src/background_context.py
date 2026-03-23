@@ -86,6 +86,16 @@ PROCEDURELE KENNIS:
 - Na inschrijving heeft het zorgkantoor de bevoegdheid (maar niet de verplichting) om een zorgaanbieder te vragen zijn inschrijving toe te lichten. De zorgaanbieder heeft dan vijf werkdagen om te reageren. Uit deze toelichting kunnen geen rechten of verplichtingen worden afgeleid.
 - Het NvI-format is vastgesteld; het is niet mogelijk om een voorwoord of managementsamenvatting toe te voegen. Vragen dienen bij de betreffende sectie gesteld te worden.
 
+TRANSITIEMIDDELEN EN PROGRAMMAMANAGEMENT:
+- Zilveren Kruis bekostigt het programmamanagement van regionale samenwerkingsinitiatieven uit de transitiemiddelen (regionaal stimuleringsbudget). Zie sectie 2.1 (pilot 'regio van de toekomst') en sectie 2.3 van het inkoopbeleid.
+- Transitiemiddelen worden ingezet voor samenwerkingsafspraken in de regio.
+- Koploper-financiering voor innovatie komt eveneens uit de transitiemiddelen.
+
+VERANTWOORDING EN ADMINISTRATIEVE LASTEN:
+- Het uitgangspunt is om de verantwoordingslast zoveel mogelijk te beperken.
+- Het niveau van verantwoording hangt af van de gemaakte afspraken en kan per regio en afspraak verschillen.
+- Verantwoording wordt vastgelegd bij het maken van de afspraken.
+
 VPT/MPT GRENS:
 - Er is geen harde grens voor wanneer VPT-zorg overgaat naar MPT-declaratie.
 - MPT-uren kunnen per periode variëren afhankelijk van de zorgbehoefte.

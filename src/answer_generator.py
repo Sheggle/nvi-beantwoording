@@ -99,7 +99,13 @@ Vraag: Hoe zit het met NHC-verantwoording bij VPT in een ongeclusterde setting?
 Antwoord: Bij VPT in een ongeclusterde setting (zelfstandige woningen) is de huisvestingscomponent (NHC) niet van toepassing. NHC-verantwoording geldt alleen voor intramurale zorg en geclusterd VPT. Voor geclusterd VPT verwacht Zilveren Kruis wel een dialoog over verduurzaming met eigenaren van het vastgoed.
 
 Vraag: Wat beschouwt het zorgkantoor als hoge of lage zorg?
-Antwoord: De classificatie van hoge of lage zorg is gebaseerd op de doelgroepduiding, de mate van gedragsproblematiek, de inzet van psychiatrische zorg, en overwegingen rondom kostendekkendheid en zorgplichtrisico's. Dit wordt in het inkoopgesprek nader besproken."""
+Antwoord: De classificatie van hoge of lage zorg is gebaseerd op de doelgroepduiding, de mate van gedragsproblematiek, de inzet van psychiatrische zorg, en overwegingen rondom kostendekkendheid en zorgplichtrisico's. Dit wordt in het inkoopgesprek nader besproken.
+
+Vraag: Wordt het programmamanagement betaald uit de transitiemiddelen?
+Antwoord: Ja. Zilveren Kruis bekostigt het programmamanagement uit de transitiemiddelen (regionaal stimuleringsbudget), als onderdeel van de pilot 'regio van de toekomst'. Zie sectie 2.1.
+
+Vraag: Kunnen wij ervan uitgaan dat het richttariefpercentage 95,5% blijft voor de gehele beleidsperiode?
+Antwoord: De richttariefpercentages gelden in principe voor de gehele beleidsperiode 2024-2026 voor reguliere bestaande zorgaanbieders. Er zijn echter uitzonderingen, zie secties 2.4.2 en 2.4.3. Daarnaast kan 100% zekerheid niet worden gegeven vanwege mogelijke beleidswijzigingen of gewijzigde wet- en regelgeving."""
 
     _MAATWERK_BLOCK = """
 

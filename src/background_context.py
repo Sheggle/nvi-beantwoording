@@ -31,4 +31,21 @@ BELANGRIJKE SCOPE-AFBAKENINGEN:
 - Kostenontwikkelingen (energie, lonen, rente) worden door de NZa verwerkt in de maximumtarieven via indexatie.
 - Het zorgkantoor kan en mag niet meer vergoeden dan 100% van de NHC/NIC-component.
 - Bij het vaststellen van de integrale tarieven houdt de NZa reeds rekening met kosten voor innovatie.
+
+BELANGRIJK JARGON:
+- "Domeinen" in de context van begrotingen en financieel plan: dit verwijst naar de verschillende WETTELIJKE KADERS/FINANCIERINGSSTROMEN (Wlz, Zvw, Wmo, Jeugdwet), NIET naar zorgcategorieën binnen de Wlz. Als gevraagd wordt om kosten/opbrengsten te splitsen per domein, betekent dit: per wettelijk kader splitsen (bijv. Wlz-omzet apart van Zvw-omzet apart van Wmo-omzet).
+- "Richttariefpercentage": het percentage van het NZa-maximumtarief dat het zorgkantoor als uitgangspunt hanteert.
+- "NHC" (Normatieve Huisvestingscomponent): vergoeding voor huisvestingskosten, alleen van toepassing bij intramurale zorg.
+- "NIC" (Normatieve Inventariscomponent): vergoeding voor inventariskosten.
+- "MPT" (Modulair Pakket Thuis): zorg thuis, geen huisvestingscomponent.
+- "VPT" (Volledig Pakket Thuis): volledig pakket thuis, integraal tarief.
+- "Ongeclusterd": zorg geleverd in zelfstandige woningen (niet op een zorglocatie) — geen NHC-component.
+- "Geclusterd": zorg geleverd op/nabij een zorglocatie — wel NHC-component.
+
+PROCEDURELE KENNIS:
+- Het zorginkoopbeleid 2024-2026 kan tweemaal met een jaar verlengd worden (naar 2027 en 2028). Dit is een eenzijdige bevoegdheid van het zorgkantoor. Na afloop kunnen zorgaanbieders opnieuw inschrijven.
+- Het zorgkantoor herijkt elk kalenderjaar of het zorginkoopbeleid nog passend is, in afstemming met branchevertegenwoordigers en zorgaanbieders.
+- Het Voorschrift Zorgtoewijzing wordt jaarlijks geactualiseerd door de NZa op geldende wet- en regelgeving. Het bevat geen inkoopvoorwaarden en valt buiten de NvI-procedure.
+- Als er aanvullend inkoopbeleid wordt gepubliceerd, wordt er in principe een NvI ingericht.
+- Na inschrijving heeft het zorgkantoor de bevoegdheid (maar niet de verplichting) om een zorgaanbieder te vragen zijn inschrijving toe te lichten. De zorgaanbieder heeft dan vijf werkdagen om te reageren. Uit deze toelichting kunnen geen rechten of verplichtingen worden afgeleid.
 """.strip()

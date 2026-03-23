@@ -93,7 +93,13 @@ Vraag: Wat is de publicatiedatum van het Voorschrift Zorgtoewijzing?
 Antwoord: Het Voorschrift Zorgtoewijzing (Bijlage 6) wordt jaarlijks geactualiseerd door de NZa en wordt uiterlijk op 1 december gepubliceerd. Het bevat geen inkoopvoorwaarden.
 
 Vraag: Kan het zorgkantoor de prestatiecode voor thuiszorgtechnologie wijzigen?
-Antwoord: Nee. De NZa stelt de prestatiecodes op en bepaalt de inhoud daarvan. Zilveren Kruis kan de prestatiecodes niet eenzijdig wijzigen. Onze ervaring in de praktijk is dat de 6,5 uur toereikend zijn."""
+Antwoord: Nee. De NZa stelt de prestatiecodes op en bepaalt de inhoud daarvan. Zilveren Kruis kan de prestatiecodes niet eenzijdig wijzigen. Onze ervaring in de praktijk is dat de 6,5 uur toereikend zijn.
+
+Vraag: Hoe zit het met NHC-verantwoording bij VPT in een ongeclusterde setting?
+Antwoord: Bij VPT in een ongeclusterde setting (zelfstandige woningen) is de huisvestingscomponent (NHC) niet van toepassing. NHC-verantwoording geldt alleen voor intramurale zorg en geclusterd VPT. Voor geclusterd VPT verwacht Zilveren Kruis wel een dialoog over verduurzaming met eigenaren van het vastgoed.
+
+Vraag: Wat beschouwt het zorgkantoor als hoge of lage zorg?
+Antwoord: De classificatie van hoge of lage zorg is gebaseerd op de doelgroepduiding, de mate van gedragsproblematiek, de inzet van psychiatrische zorg, en overwegingen rondom kostendekkendheid en zorgplichtrisico's. Dit wordt in het inkoopgesprek nader besproken."""
 
     _MAATWERK_BLOCK = """
 

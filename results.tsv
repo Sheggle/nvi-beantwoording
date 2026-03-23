@@ -4,3 +4,4 @@ commit	mean_expert	n_scored	status	description
 c097aab	32	76	discard	Hybrid section matching (direct+keyword). +2 assertions but Q3 regressed 3→0 (extra context confused model on 10-client rule). Net gain not worth regression.
 0f69d67	34	76	keep	Prompt thoroughness: read full context before saying unanswerable. Q16 1→3, Q17 5/5, Q20 0→2, Q18 1→2. No regressions. 30→34 assertions.
 e5da8c2	34	76	keep	Naming (Zilveren Kruis) + decisive yes/no + background knowledge emphasis. Q8 2→4/4, Q4 0→2, Q1 2→3. Q17 regressed (LLM variance). Net 34 but structural improvement.
+8cd8c3c	25	76	discard	Keyword min 2 hits: major regression 34→25. Removed too much useful context for GZ questions. Q3, Q17, Q19 all regressed.

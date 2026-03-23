@@ -1,3 +1,4 @@
 commit	mean_expert	n_scored	status	description
 5efcabd	25	76	baseline	Baseline: 25/76 assertions (33%)
 390559d	30	76	keep	Glossary (domeinen=Wlz/Zvw/Wmo) + procedural knowledge + NHC/MPT/VPT terms. Q2,Q6 fully fixed, Q8,Q9,Q17 improved.
+c097aab	32	76	discard	Hybrid section matching (direct+keyword). +2 assertions but Q3 regressed 3→0 (extra context confused model on 10-client rule). Net gain not worth regression.

@@ -14,3 +14,5 @@ b0b8a9d	70	147	discard	Enable verify loop: 74→70, regression. Q3 3→1, Q14 4�
 c0f4341	82	147	keep	Few-shot examples for VPT NHC + hoge/lage zorg. Q26 0→5/5 (perfect!), Q38 0→2. 77→82 assertions (56%). No regressions on perfect questions.
 8053b97	92	147	keep	Transitiemiddelen/programmamanagement + richttarief knowledge+examples. Q24 0→4/4, Q25 0→2, Q35 0→2, Q38 2→3. GZ at 70%. 82→92 (63%).
 a9d05e7	91	147	discard	VZT details expansion: Q5 0→2 (fixed!) but Q36 3→1, Q27 2→1. Net 92→91. Context dilution.
+	c0770de	96	147	keep	Iteration 14: 4 ablation-ready interventions. NZa few-shot (replaced emphasis block), VV few-shot, section citations, collaborative framing. VV 43%→61%.
+	e761909	99	147	keep	Iteration 15: BG knowledge (IZA/WOZO/GALA, reëel tarief, juli/sept, sectorvreemde) + few-shot (Q28/Q37/Q17/Q27/Q12). Q37 1→4/4, Q12 1→3/4. VV 61%→75%. Confirmed stable 98-99.

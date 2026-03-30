@@ -18,6 +18,7 @@ from .config import Settings
 from .section_matcher import SectionMatcher, MatchResult
 from .supplementary_matcher import SupplementaryMatcher
 from .background_context import BACKGROUND_CONTEXT
+from .few_shot_examples import FEW_SHOT_EXAMPLES
 
 
 class TokenBucket:
@@ -82,36 +83,7 @@ Antwoord: Het zorgkantoor gaat niet over de maximum tarieven van de NZa. Eventue
 
 Vraag: Betekent het werken met integrale tarieven dat de componenten loon, materieel, NHC en NIC onderling uitwisselbaar zijn?
 Antwoord: De NZa stelt de tarieven vast. Zij geeft aan dat de Wlz volledig integrale tarieven kent: één tarief waarvan alles bekostigd moet worden.
-
-Vraag: Is het richttariefpercentage voor de gehele beleidsperiode vastgelegd?
-Antwoord: Ja, de richttariefpercentages gelden voor de gehele beleidsperiode 2024-2026, met uitzondering van de prestatie 7VG waarvoor kostenonderzoeken nog lopen. Zie secties 2.4.2 en 2.4.3 voor de uitzonderingen.
-
-Vraag: Komt er een overzicht van de wijzigingen ten opzichte van het voorgaande beleid?
-Antwoord: Nee, daar voorzien wij niet in.
-
-Vraag: Wat is de publicatiedatum van het Voorschrift Zorgtoewijzing?
-Antwoord: Het Voorschrift Zorgtoewijzing (Bijlage 6) wordt jaarlijks geactualiseerd door de NZa en wordt uiterlijk op 1 december gepubliceerd. Het bevat geen inkoopvoorwaarden.
-
-Vraag: Kan het zorgkantoor de prestatiecode voor thuiszorgtechnologie wijzigen?
-Antwoord: Nee. De NZa stelt de prestatiecodes op en bepaalt de inhoud daarvan. Zilveren Kruis kan de prestatiecodes niet eenzijdig wijzigen. Onze ervaring in de praktijk is dat de 6,5 uur toereikend zijn.
-
-Vraag: Hoe zit het met NHC-verantwoording bij VPT in een ongeclusterde setting?
-Antwoord: Bij VPT in een ongeclusterde setting (zelfstandige woningen) is de huisvestingscomponent (NHC) niet van toepassing. NHC-verantwoording geldt alleen voor intramurale zorg en geclusterd VPT. Voor geclusterd VPT verwacht Zilveren Kruis wel een dialoog over verduurzaming met eigenaren van het vastgoed.
-
-Vraag: Wat beschouwt het zorgkantoor als hoge of lage zorg?
-Antwoord: De classificatie van hoge of lage zorg is gebaseerd op de doelgroepduiding, de mate van gedragsproblematiek, de inzet van psychiatrische zorg, en overwegingen rondom kostendekkendheid en zorgplichtrisico's. Dit wordt in het inkoopgesprek nader besproken.
-
-Vraag: Wordt het programmamanagement betaald uit de transitiemiddelen?
-Antwoord: Ja. Zilveren Kruis bekostigt het programmamanagement uit de transitiemiddelen (regionaal stimuleringsbudget), als onderdeel van de pilot 'regio van de toekomst'. Zie sectie 2.1.
-
-Vraag: Kunnen wij ervan uitgaan dat het richttariefpercentage 95,5% blijft voor de gehele beleidsperiode?
-Antwoord: De richttariefpercentages gelden in principe voor de gehele beleidsperiode 2024-2026 voor reguliere bestaande zorgaanbieders. Er zijn echter uitzonderingen, zie secties 2.4.2 en 2.4.3. Daarnaast kan 100% zekerheid niet worden gegeven vanwege mogelijke beleidswijzigingen of gewijzigde wet- en regelgeving.
-
-Vraag: Wat houdt de coördinatieverantwoordelijkheid in als u exclusief behandeling levert?
-Antwoord: Dit betreft de professionele verantwoordelijkheid zoals beschreven in de bijlage Afkortingen en begrippen van het Voorschrift Zorgtoewijzing. Het omvat het maken van duidelijke afspraken over verantwoordelijkheden, taken en doelen, afstemming met andere zorgprofessionals, en het hanteren van professionele standaarden voor de beroepsgroep.
-
-Vraag: Waarom worden nog te publiceren documenten als integraal onderdeel van de overeenkomst opgenomen?
-Antwoord: Het betreft met name het Voorschrift Zorgtoewijzing. Dit wordt later gepubliceerd omdat het afhankelijk is van (1) de NZa beleidsregels die pas per 1 juli definitief zijn, en (2) wijzigingen in het iWlz berichtenverkeer. Het Voorschrift bevat geen inkoopvoorwaarden."""
+"""
 
     _MAATWERK_BLOCK = """
 
@@ -133,6 +105,63 @@ Citeer-dan-concludeer:
 Wanneer een ja/nee-antwoord wordt verwacht, citeer eerst de relevante passage uit de beleidstekst en geef dan je conclusie. Voorbeeld:
 Vraag: Geldt de korting ook voor nieuwe aanbieders?
 Antwoord: In de beleidstekst staat: "[relevante passage]". Op basis hiervan: ja/nee, [conclusie]."""
+
+    # --- Iteration 14 blocks (ablation-ready) ---
+
+    _NZA_ROLE_EMPHASIS_BLOCK = """
+
+Vraag: De tariefafslag op bepaalde zorgprofielen is onduidelijk. Hoe is deze tot stand gekomen?
+Antwoord: De NZa is verantwoordelijk voor het vaststellen van de maximumtarieven per prestatie. De door Zilveren Kruis geboden tariefpercentages zijn bepaald volgens de methodiek in bijlage 7, waarbij is getoetst of minimaal 75% van de aanbieders een positief resultaat behaalt (sectie 2.3.2).
+
+Vraag: Het breder kijken naar passende zorg vergt meer tijd en kennis. Hoe wordt dit financieel gedekt?
+Antwoord: VPT en intramurale zorg kennen integrale tarieven waarin alle kosten zijn opgenomen. De NZa beleidsregel en prestatiebeschrijvingen beschrijven welke activiteiten binnen een prestatie vallen. Zorgkantoren volgen de NZa wet- en regelgeving voor financiering. Efficiëntere zorgverlening door zelfredzaamheid kan binnen het integrale tarief worden gerealiseerd.
+
+Vraag: De inzet van technologie is gelimiteerd in uren per maand. Kan dit worden aangepast?
+Antwoord: De NZa stelt de prestatiecodes op en bepaalt de inhoud en omvang daarvan. Zilveren Kruis kan de prestatiecodes niet eenzijdig wijzigen. Onze ervaring in de praktijk is dat de vastgestelde uren toereikend zijn.
+
+Vraag: Zijn de tarieven hoog genoeg voor een gezonde bedrijfsvoering?
+Antwoord: De tariefsystematiek beoogt een reëel tarief te bieden voor een redelijk efficiënt functionerende zorgaanbieder. Mocht de systematiek leiden tot een onverwacht benadelend effect, dan is de hardheidsclausule bedoeld als remedie. Doelmatig werken is daarvoor een voorwaarde. De procedure staat beschreven in hoofdstuk 7 / sectie 7.9.5."""
+
+    _VV_FEW_SHOT_BLOCK = """
+
+Vraag: Moeten alle zorgaanbieders alle vier essentiële voorzieningen bieden?
+Antwoord: Nee. Welke essentiële voorzieningen een zorgaanbieder levert, hangt af van de situatie in de regio. Het is een gezamenlijke verantwoordelijkheid van zorgaanbieders, die dit onderling afspreken in afstemming met het zorgkantoor.
+
+Vraag: Wat is doorslaggevend bij het maken van regionale afspraken over zorgverdeling?
+Antwoord: Het maken van afspraken over wie welke zorg levert is een gezamenlijk proces van zorgkantoor en zorgaanbieders, waarbij Zilveren Kruis een sturende rol heeft. De afspraken sluiten aan bij landelijke programma's (IZA, WOZO, GALA) en zijn gericht op efficiënte en doelmatige zorgverlening.
+
+Vraag: Hoe worden integrale tarieven bij VPT en intramurale zorg verantwoord?
+Antwoord: VPT en intramurale zorg kennen integrale tarieven, waarin alle kosten zijn opgenomen. De NZa beleidsregel en prestatiebeschrijvingen beschrijven wat binnen een prestatie valt. Efficiëntere zorgverlening door zelfredzaamheid kan binnen het integrale tarief worden gerealiseerd.
+
+Vraag: Zijn er nog strategische partnerschappen in het inkoopbeleid 2024-2026?
+Antwoord: Bestaande strategische partnerschappen blijven geldig voor de afgesproken looptijd. Sectie 6.18 beschrijft de mogelijkheden voor afspraken op maat en samenwerking met innovatieve zorgaanbieders. Het inkoopbeleid biedt dus wel degelijk ruimte voor strategische samenwerking.
+
+Vraag: Is het richttariefpercentage 95,5% gegarandeerd voor de hele beleidsperiode?
+Antwoord: Het richttariefpercentage van 95,5% geldt voor reguliere bestaande aanbieders voor 2024-2026. Er zijn uitzonderingen (secties 2.4.2, 2.4.3, 2.4.4). Daarnaast kan 100% zekerheid niet worden gegeven vanwege mogelijke beleidswijzigingen of gewijzigde wet- en regelgeving.
+
+Vraag: Hoe kan een zorgaanbieder bezwaar maken als het tarief niet kostendekkend is?
+Antwoord: De hardheidsclausule is bedoeld als remedie voor onverwacht benadelend effect van de tariefsystematiek. Doelmatig werken is een voorwaarde. De procedure en deadlines staan beschreven in hoofdstuk 7 / sectie 7.9.5. Het tarief moet een reëel tarief zijn voor efficiënte zorglevering.
+
+Vraag: Hoe wordt bij VPT omgegaan met NHC en duurzaamheid?
+Antwoord: Bij VPT in een ongeclusterde setting is de huisvestingscomponent (NHC) niet van toepassing — er geldt geen NHC-verantwoording. Bij geclusterd VPT verwacht Zilveren Kruis wel een dialoog met eigenaren van vastgoed over verduurzaming. Pas geen intramurale verantwoordingseisen toe op ongeclusterd VPT.
+
+Vraag: Worden afspraken over regionaal inkoopbeleid eenzijdig bepaald?
+Antwoord: Nee. Het beleidskader is landelijk hetzelfde, maar de invulling en uitwerking verschilt per zorgkantoorregio. Afspraken worden gemaakt in overleg met zorgaanbieders — het proces is gebaseerd op redelijkheid en billijkheid."""
+
+    _SECTION_CITATIONS_BLOCK = """
+
+SECTIEREFERENTIES — verwijs altijd naar specifieke secties:
+- Als je informatie uit een specifieke sectie, bijlage of hoofdstuk haalt, noem het nummer (bijv. "zie sectie 2.4.2", "bijlage 6", "hoofdstuk 7").
+- Bij uitzonderingen of aanvullende regels: verwijs naar de sectie waar deze staan.
+- Bij termen die in bijlagen gedefinieerd zijn: noem de bijlage."""
+
+    _COLLABORATIVE_FRAMING_BLOCK = """
+
+GEZAMENLIJK PROCES — kader besluitvorming correct:
+- Regionale afspraken, essentiële voorzieningen en zorgverdeling zijn een gezamenlijke verantwoordelijkheid van zorgkantoor én zorgaanbieders.
+- Gebruik formuleringen als "in overleg met", "gezamenlijk", "in afstemming met" waar van toepassing.
+- Vermijd de suggestie dat Zilveren Kruis eenzijdig beslist over zaken die in de praktijk in samenwerking worden bepaald.
+- Processen als inkoopbeleid herijking, spiegelinformatie-duiding en regionale invulling zijn altijd in samenspraak met de sector."""
 
     _CALIBRATED_CONFIDENCE_BLOCK = """
 
@@ -240,17 +269,41 @@ Richtlijnen:
             active.append("calibrated_confidence")
         if self.settings.enable_model_guided_retrieval:
             active.append("model_guided_retrieval")
+        if self.settings.enable_nza_role_emphasis:
+            active.append("nza_role_emphasis")
+        if self.settings.enable_vv_few_shot:
+            active.append("vv_few_shot")
+        if self.settings.enable_section_citations:
+            active.append("section_citations")
+        if self.settings.enable_collaborative_framing:
+            active.append("collaborative_framing")
         return active
 
     def _build_system_prompt(self) -> str:
         """Build the system prompt, conditionally appending improvement blocks."""
         prompt = self.BASE_SYSTEM_PROMPT
 
+        # Always-on few-shot examples
+        prompt += FEW_SHOT_EXAMPLES
+
         if self.settings.enable_maatwerk_examples:
             prompt += self._MAATWERK_BLOCK
 
         if self.settings.enable_quote_before_conclude:
             prompt += self._QUOTE_BEFORE_CONCLUDE_BLOCK
+
+        # Iteration 14 blocks
+        if self.settings.enable_nza_role_emphasis:
+            prompt += self._NZA_ROLE_EMPHASIS_BLOCK
+
+        if self.settings.enable_vv_few_shot:
+            prompt += self._VV_FEW_SHOT_BLOCK
+
+        if self.settings.enable_section_citations:
+            prompt += self._SECTION_CITATIONS_BLOCK
+
+        if self.settings.enable_collaborative_framing:
+            prompt += self._COLLABORATIVE_FRAMING_BLOCK
 
         if self.settings.enable_calibrated_confidence:
             prompt += self._CALIBRATED_CONFIDENCE_BLOCK

@@ -24,6 +24,29 @@ class InkoopbeleidSection(BaseModel):
     text: str
 
 
+class VerificationResponse(BaseModel):
+    """Response from the verify-after-generate loop."""
+
+    claims: list[str]
+    unsupported_claims: list[str]
+    revised_answer: str
+    revision_reasoning: str
+
+
+class Trajectory(BaseModel):
+    """Per-question trajectory capturing the full agent trace."""
+
+    match_type: str | None = None  # e.g. "direct", "parent", "keyword"
+    match_details: str | None = None
+    matched_inkoopbeleid_sections: list[str] = []
+    matched_supplementary_chunks: list[dict] = []  # [{doc_id, section, title}]
+    full_prompt: str | None = None  # The complete user prompt sent to the LLM
+    raw_response: dict | None = None  # Raw LLM response
+    active_improvements: list[str] = []
+    verification_response: dict | None = None
+    retrieval_tool_calls: list[dict] = []
+
+
 class GeneratedAnswer(BaseModel):
     """A generated answer for an NvI question."""
 
@@ -36,6 +59,7 @@ class GeneratedAnswer(BaseModel):
     original_answer: str | None = None  # For comparison
     correspondence_score: int | None = None
     evaluation_reasoning: str | None = None
+    trajectory: Trajectory | None = None
 
 
 class LLMResponse(BaseModel):
@@ -52,3 +76,14 @@ class EvaluationResult(BaseModel):
 
     correspondence_score: Literal[1, 2, 3, 4, 5]
     evaluation_reasoning: str
+
+
+class SupplementaryChunk(BaseModel):
+    """A chunk from a supplementary reference document."""
+
+    doc_id: str
+    doc_title: str
+    source: str  # "nza" or "zk"
+    section: str
+    title: str
+    text: str

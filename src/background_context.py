@@ -26,6 +26,10 @@ ROLVERDELING IN DE WLZ-ZORGINKOOP:
 - Kan aanwijzingen geven aan de NZa voor tariefaanpassingen.
 - Zorgkantoren volgen het macrokader; bij structurele problemen gaan zij het gesprek aan met VWS.
 
+LANDELIJKE PROGRAMMA'S EN KADERS:
+- Regionale afspraken sluiten aan bij landelijke programma's zoals het Integraal Zorgakkoord (IZA), het programma Wonen, Ondersteuning en Zorg voor Ouderen (WOZO) en het Gezond en Actief Leven Akkoord (GALA).
+- Efficiënte en doelmatige zorgverlening is het leidende principe bij regionale zorgverdeling.
+
 BELANGRIJKE SCOPE-AFBAKENINGEN:
 - Het zorgkantoor gaat NIET over de maximumtarieven van de NZa. Vragen daarover dienen aan de NZa gesteld te worden.
 - Kostenontwikkelingen (energie, lonen, rente) worden door de NZa verwerkt in de maximumtarieven via indexatie.
@@ -56,7 +60,8 @@ VOORSCHRIFT ZORGTOEWIJZING:
 - Het Voorschrift bevat o.a. een vertaaltabel voor sectorvreemde prestaties en definities van zorgprestaties.
 
 HARDHEIDSCLAUSULE:
-- De hardheidsclausule is bedoeld voor individuele zorgaanbieders die ondanks doelmatig werken de zorg niet binnen het richttarief kunnen leveren.
+- De tariefsystematiek beoogt een reëel tarief te bieden voor een redelijk efficiënt functionerende zorgaanbieder.
+- De hardheidsclausule is bedoeld als remedie voor een onverwacht benadelend effect van de tariefsystematiek, voor individuele zorgaanbieders die ondanks doelmatig werken de zorg niet binnen het richttarief kunnen leveren.
 - Doelmatig werken is een voorwaarde voor een beroep op de hardheidsclausule.
 - De procedure en deadlines staan beschreven in hoofdstuk 7 / sectie 7.9.5 van het inkoopbeleid.
 
@@ -81,10 +86,21 @@ SPIEGELINFORMATIE:
 
 PROCEDURELE KENNIS:
 - Het zorginkoopbeleid 2024-2026 kan tweemaal met een jaar verlengd worden (naar 2027 en 2028). Dit is een eenzijdige bevoegdheid van het zorgkantoor. Na afloop kunnen zorgaanbieders opnieuw inschrijven.
+- Zilveren Kruis beoordeelt in 2026 of het beleid nog passend is, in lijn met ontwikkelingen in de GGZ/GZ/VV en maatschappelijke trends.
 - Het zorgkantoor herijkt elk kalenderjaar of het zorginkoopbeleid nog passend is, in afstemming met branchevertegenwoordigers en zorgaanbieders.
 - Als er aanvullend inkoopbeleid wordt gepubliceerd, wordt er in principe een NvI ingericht.
 - Na inschrijving heeft het zorgkantoor de bevoegdheid (maar niet de verplichting) om een zorgaanbieder te vragen zijn inschrijving toe te lichten. De zorgaanbieder heeft dan vijf werkdagen om te reageren. Uit deze toelichting kunnen geen rechten of verplichtingen worden afgeleid.
 - Het NvI-format is vastgesteld; het is niet mogelijk om een voorwoord of managementsamenvatting toe te voegen. Vragen dienen bij de betreffende sectie gesteld te worden.
+
+INSCHRIJVING EN CONTRACTEERPROCES:
+- Bij de inschrijving wordt in juli akkoord gevraagd met de voorwaarden; de daadwerkelijke invulling van de afspraken volgt in overleg in september.
+- Het beleid wordt niet aangepast op basis van individuele bezwaren; het proces is gebaseerd op redelijkheid en billijkheid.
+
+SECTORVREEMDE PRESTATIES:
+- Met ingang van 2024 worden sectorvreemde prestaties vergoed op basis van het tariefpercentage van de sector van de cliëntindicatie.
+- De werkwijze wordt bepaald in overleg met de zorginkoper.
+- Het Voorschrift Zorgtoewijzing bevat een vertaaltabel als alternatief voor omzetting.
+- Omzetting naar de eigen sector is nog steeds mogelijk als de aanbieder de zorg niet binnen het sectorvreemde tarief kan leveren.
 
 TRANSITIEMIDDELEN EN PROGRAMMAMANAGEMENT:
 - Zilveren Kruis bekostigt het programmamanagement van regionale samenwerkingsinitiatieven uit de transitiemiddelen (regionaal stimuleringsbudget). Zie sectie 2.1 (pilot 'regio van de toekomst') en sectie 2.3 van het inkoopbeleid.

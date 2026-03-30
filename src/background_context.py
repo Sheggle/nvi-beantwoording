@@ -118,3 +118,22 @@ VPT/MPT GRENS:
 - In alle redelijkheid wordt verwacht dat de zorgaanbieder een passende beoordeling maakt.
 - Doelmatigheid is het leidende principe bij het bepalen van de juiste zorginzet.
 """.strip()
+
+PROCEDURAL_KNOWLEDGE_BLOCK = """
+
+VOLUMEPLAFOND (INTRAMURALE ZORG):
+- Het volumeplafond is het maximaal aantal te declareren dagen voor intramurale zorg per jaar.
+- Het volumeplafond is NIET van toepassing op geclusterde woonvormen die uitsluitend VPT bieden.
+- Het volumeplafond heeft betrekking op alle intramurale zorgsoorten (niet alleen VPT/MPT).
+- De ZZP0 (verblijfscomponent niet-geïndiceerde partner) valt binnen het intramurale volumeplafond.
+- Het volumeplafond wordt jaarlijks vastgesteld op basis van recente declaratiegegevens.
+- Er is géén sprake van een splitsing in het Wlz-budget; ook intramurale zorg is persoonsvolgend.
+
+HERSCHIKKING:
+- De tussentijdse herschikking heeft betrekking op ALLE zorgsoorten, inclusief intramurale zorg — niet alleen VPT en MPT.
+- Meer over de wijze van herschikking staat beschreven in het inkoopbeleid (paragraaf 9.6 voor V&V).
+
+ESSENTIËLE VOORZIENINGEN — TOESLAG:
+- De 0,5% opslag voor zorgaanbieders met een rol bij essentiële voorzieningen geldt alleen voor V&V-prestaties.
+- De opslag geldt NIET voor sectorvreemde zorg.
+"""

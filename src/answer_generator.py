@@ -17,7 +17,7 @@ from .models import (
 from .config import Settings
 from .section_matcher import SectionMatcher, MatchResult
 from .supplementary_matcher import SupplementaryMatcher
-from .background_context import BACKGROUND_CONTEXT
+from .background_context import BACKGROUND_CONTEXT, PROCEDURAL_KNOWLEDGE_BLOCK
 from .few_shot_examples import FEW_SHOT_EXAMPLES
 
 
@@ -61,7 +61,7 @@ Richtlijnen:
 - Gebruik "Zilveren Kruis" als je het over het zorgkantoor hebt, niet alleen "het zorgkantoor".
 - Als een vraag buiten het bereik van het zorgkantoor valt (bijv. NZa-tarieven, tariefstructuur), verwijs door naar de juiste instantie in plaats van te speculeren.
 - Gebruik de achtergrondkennis om vragen correct te kaderen binnen de rolverdeling NZa/zorgkantoor/VWS.
-- Bij ja/nee-vragen: begin met een duidelijk "Ja" of "Nee", gevolgd door de onderbouwing. Niet hedgen.
+- Bij eenduidige ja/nee-vragen: begin met een duidelijk "Ja" of "Nee", gevolgd door de onderbouwing.
 - Wees accuraat en verwijs naar specifieke secties waar relevant.
 - Schrijf in het Nederlands.
 
@@ -162,6 +162,37 @@ GEZAMENLIJK PROCES — kader besluitvorming correct:
 - Gebruik formuleringen als "in overleg met", "gezamenlijk", "in afstemming met" waar van toepassing.
 - Vermijd de suggestie dat Zilveren Kruis eenzijdig beslist over zaken die in de praktijk in samenwerking worden bepaald.
 - Processen als inkoopbeleid herijking, spiegelinformatie-duiding en regionale invulling zijn altijd in samenspraak met de sector."""
+
+    _NUANCED_ANSWERS_BLOCK = """
+
+NUANCE BIJ JA/NEE — niet alles is ja of nee:
+- Begin ALLEEN met "Ja" of "Nee" als het antwoord echt eenduidig is.
+- Als het antwoord afhangt van de situatie, begin dan NIET met Ja/Nee maar met de nuance. Voorbeelden:
+  - "Dat hangt af van de specifieke omstandigheden van de individuele zorgaanbieder."
+  - "Dat kunnen wij niet in algemeenheid bevestigen."
+  - "Dit is afhankelijk van de situatie in uw regio."
+- Als de vraag een aanname bevat die niet klopt, corrigeer die dan in plaats van Ja/Nee te zeggen.
+- Als de vraag onduidelijk of niet zelfstandig leesbaar is, geef dat dan aan.
+
+Vraag: Kunt u bevestigen dat de genoemde factoren altijd een beroep op de hardheidsclausule rechtvaardigen?
+Antwoord: Nee, in zijn algemeenheid kunnen wij dat niet bevestigen. Of sprake is van een onvoorzien en onredelijk benadelend gevolg is afhankelijk van de omstandigheden per individuele zorgaanbieder.
+
+Vraag: Geldt het volumeplafond ook voor geclusterde woonvormen die uitsluitend VPT bieden?
+Antwoord: Nee, het volumeplafond is niet van toepassing voor geclusterde woonvormen die uitsluitend VPT bieden.
+
+Vraag: Welk verschil komt er t.o.v. het huidige tariefpercentage?
+Antwoord: Deze vraag is niet zelfstandig leesbaar. Het is ons niet duidelijk wat u bedoelt."""
+
+    _CASE_BY_CASE_BLOCK = """
+
+INDIVIDUELE BEOORDELING — vermijd generalisaties:
+- Veel vragen gaan over specifieke situaties die per zorgaanbieder verschillen. Gebruik dan:
+  - "Dit is afhankelijk van de omstandigheden van het geval."
+  - "Dit wordt per individuele zorgaanbieder beoordeeld."
+  - "Hier kunnen wij op voorhand geen uitspraak over doen."
+- Bij vragen over de hardheidsclausule: benadruk dat beoordeling per individueel geval plaatsvindt.
+- Bij vragen over tariefdifferentiatie: verwijs naar de mogelijkheid van individuele afspraken met de zorginkoper.
+- Generaliseer NIET als het beleid per geval toetst."""
 
     _CALIBRATED_CONFIDENCE_BLOCK = """
 
@@ -277,6 +308,12 @@ Richtlijnen:
             active.append("section_citations")
         if self.settings.enable_collaborative_framing:
             active.append("collaborative_framing")
+        if self.settings.enable_nuanced_answers:
+            active.append("nuanced_answers")
+        if self.settings.enable_case_by_case:
+            active.append("case_by_case")
+        if self.settings.enable_procedural_knowledge:
+            active.append("procedural_knowledge")
         return active
 
     def _build_system_prompt(self) -> str:
@@ -305,6 +342,13 @@ Richtlijnen:
         if self.settings.enable_collaborative_framing:
             prompt += self._COLLABORATIVE_FRAMING_BLOCK
 
+        # Iteration 16 blocks
+        if self.settings.enable_nuanced_answers:
+            prompt += self._NUANCED_ANSWERS_BLOCK
+
+        if self.settings.enable_case_by_case:
+            prompt += self._CASE_BY_CASE_BLOCK
+
         if self.settings.enable_calibrated_confidence:
             prompt += self._CALIBRATED_CONFIDENCE_BLOCK
         else:
@@ -314,7 +358,7 @@ Richtlijnen:
 
     def _build_retrieval_system_prompt(self) -> str:
         """Build the system prompt for model-guided retrieval mode."""
-        prompt = self.RETRIEVAL_SYSTEM_PROMPT.format(background=BACKGROUND_CONTEXT)
+        prompt = self.RETRIEVAL_SYSTEM_PROMPT.format(background=self._get_background_context())
 
         if self.settings.enable_maatwerk_examples:
             prompt += self._MAATWERK_BLOCK
@@ -329,6 +373,13 @@ Richtlijnen:
 
         return prompt
 
+    def _get_background_context(self) -> str:
+        """Build the background context, optionally including procedural knowledge."""
+        bg = BACKGROUND_CONTEXT
+        if self.settings.enable_procedural_knowledge:
+            bg += PROCEDURAL_KNOWLEDGE_BLOCK
+        return bg
+
     def _build_user_prompt(
         self,
         question: NvIQuestion,
@@ -338,6 +389,7 @@ Richtlijnen:
     ) -> str:
         """Build the user prompt for the LLM."""
         section_info = f" (sectie {question.section})" if question.section else ""
+        bg = self._get_background_context()
 
         supp_section = ""
         if supplementary_context:
@@ -345,7 +397,7 @@ Richtlijnen:
 
         if not context:
             return f"""ACHTERGRONDKENNIS:
-{BACKGROUND_CONTEXT}
+{bg}
 
 BELEIDSTEKST:
 Geen relevante secties gevonden in het inkoopbeleid.{supp_section}
@@ -356,7 +408,7 @@ VRAAG{section_info}:
 Beantwoord op basis van de achtergrondkennis en eventuele aanvullende bronnen, of geef aan dat deze vraag niet beantwoord kan worden."""
 
         return f"""ACHTERGRONDKENNIS:
-{BACKGROUND_CONTEXT}
+{bg}
 
 BELEIDSTEKST:
 {context}{supp_section}
@@ -389,7 +441,7 @@ Controleer dit concept-antwoord tegen de bovenstaande context."""
                 ],
                 response_format=VerificationResponse,
                 temperature=0.0,
-                max_tokens=800,
+                max_completion_tokens=800,
             )
             return response.choices[0].message.parsed
         except Exception:
@@ -477,7 +529,7 @@ Controleer dit concept-antwoord tegen de bovenstaande context."""
                     messages=messages,
                     tools=self.RETRIEVAL_TOOLS,
                     temperature=0.1,
-                    max_tokens=800,
+                    max_completion_tokens=800,
                 )
 
             msg = response.choices[0].message
@@ -542,7 +594,7 @@ Controleer dit concept-antwoord tegen de bovenstaande context."""
                     messages=messages,
                     response_format=LLMResponse,
                     temperature=0.1,
-                    max_tokens=500,
+                    max_completion_tokens=self.settings.max_answer_tokens,
                 )
 
                 raw_msg = final_response.choices[0].message
@@ -565,7 +617,7 @@ Controleer dit concept-antwoord tegen de bovenstaande context."""
                         context_summary = "\n".join(
                             m["content"] for m in messages if m.get("role") == "tool"
                         )
-                        verify_prompt = f"ACHTERGRONDKENNIS:\n{BACKGROUND_CONTEXT}\n\nBELEIDSTEKST:\n{context_summary}\n\nVRAAG:\n{question.question}"
+                        verify_prompt = f"ACHTERGRONDKENNIS:\n{self._get_background_context()}\n\nBELEIDSTEKST:\n{context_summary}\n\nVRAAG:\n{question.question}"
                         verification = await self._verify_answer(answer_text, verify_prompt)
                         if verification:
                             trajectory.verification_response = verification.model_dump()
@@ -686,7 +738,7 @@ Controleer dit concept-antwoord tegen de bovenstaande context."""
                     ],
                     response_format=LLMResponse,
                     temperature=0.1,
-                    max_tokens=500,
+                    max_completion_tokens=self.settings.max_answer_tokens,
                 )
 
                 # Capture raw response

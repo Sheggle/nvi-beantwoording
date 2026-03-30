@@ -38,6 +38,12 @@ class Settings(BaseModel):
     enable_section_citations: bool = True
     enable_collaborative_framing: bool = True
 
+    # Iteration 16 flags (full-set patterns)
+    enable_nuanced_answers: bool = True
+    enable_case_by_case: bool = True
+    enable_procedural_knowledge: bool = True
+    max_answer_tokens: int = 800
+
     def get_nvi_path(self, domain: str) -> Path:
         """Get path to NvI JSON file for a domain."""
         return self.parsed_data_path / f"NvI-{domain}-2024-2026.json"

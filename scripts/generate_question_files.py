@@ -101,11 +101,11 @@ Antwoord: De NZa is verantwoordelijk voor het vaststellen van de tarieven per pr
 
 ## Beleidstekst
 
-{beleidstekst}
+De beleidstekst is bijgevoegd als bijlage.
 
 ## Vragen
 
-Beantwoord de onderstaande vragen namens het zorgkantoor. Baseer je uitsluitend op de beleidstekst en de rolverdeling hierboven. Houd je strikt aan de antwoordstijl en kritieke regels.
+Beantwoord de onderstaande vragen namens het zorgkantoor. Baseer je uitsluitend op de bijgevoegde beleidstekst en de rolverdeling hierboven. Houd je strikt aan de antwoordstijl en kritieke regels.
 
 Geef je antwoord als een tabel in Excel-formaat (tab-gescheiden) met drie kolommen:
 - Kolom 1: Vraagnummer (exact zoals hieronder genummerd)
@@ -123,15 +123,6 @@ def load_json(path: Path) -> list[dict]:
         return json.load(f)
 
 
-def build_beleidstekst(sections: list[dict]) -> str:
-    """Combine all inkoopbeleid sections into one policy text."""
-    parts = []
-    for s in sections:
-        header = f"### {s['section']} {s['title']}" if s.get("title") else f"### {s['section']}"
-        parts.append(f"{header}\n\n{s['text']}")
-    return "\n\n".join(parts)
-
-
 def format_questions(questions: list[dict], start_num: int) -> str:
     """Format a batch of questions with 3-digit numbering."""
     lines = []
@@ -146,15 +137,12 @@ def generate_files(batch_size: int, output_dir: Path) -> None:
 
     for domain in DOMAINS:
         nvi_path = parsed / f"NvI-{domain}-2024-2026.json"
-        beleid_path = parsed / f"Inkoopbeleid-{domain}-2024-2026.json"
 
-        if not nvi_path.exists() or not beleid_path.exists():
-            print(f"Skipping {domain}: missing data files")
+        if not nvi_path.exists():
+            print(f"Skipping {domain}: missing data file")
             continue
 
         questions = load_json(nvi_path)
-        beleid_sections = load_json(beleid_path)
-        beleidstekst = build_beleidstekst(beleid_sections)
 
         domain_dir = output_dir / domain
         domain_dir.mkdir(parents=True, exist_ok=True)
@@ -171,10 +159,7 @@ def generate_files(batch_size: int, output_dir: Path) -> None:
             end_num = end
 
             vragen = format_questions(batch, start_num)
-            prompt = PROMPT_TEMPLATE.format(
-                beleidstekst=beleidstekst,
-                vragen=vragen,
-            )
+            prompt = PROMPT_TEMPLATE.format(vragen=vragen)
 
             filename = f"batch_{start_num:03d}-{end_num:03d}.md"
             filepath = domain_dir / filename

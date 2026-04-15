@@ -3,7 +3,7 @@
 import json
 from pathlib import Path
 
-from .models import NvIQuestion, InkoopbeleidSection
+from .models import NvIQuestion, InkoopbeleidSection, SupplementaryChunk
 from .config import Settings
 
 
@@ -65,6 +65,18 @@ class DataLoader:
         questions = self.load_nvi_questions(domain)
         sections = self.load_inkoopbeleid_sections(domain)
         return questions, sections
+
+    def load_supplementary_chunks(self) -> list[SupplementaryChunk]:
+        """Load supplementary reference document chunks.
+
+        Returns empty list if file not found.
+        """
+        path = self.settings.get_supplementary_chunks_path()
+        if not path.exists():
+            return []
+        with open(path, "r", encoding="utf-8") as f:
+            data = json.load(f)
+        return [SupplementaryChunk(**item) for item in data]
 
     @staticmethod
     def list_available_domains(parsed_data_path: Path) -> list[str]:

@@ -11,6 +11,7 @@ from .config import Settings
 from .data_loader import DataLoader
 from .section_matcher import SectionMatcher
 from .answer_generator import AnswerGenerator
+from .supplementary_matcher import SupplementaryMatcher
 from .evaluator import Evaluator
 
 
@@ -42,6 +43,13 @@ class Pipeline:
         # Load data
         questions, sections = self.data_loader.load_domain_data(domain)
 
+        # Load supplementary chunks (domain-independent)
+        supplementary_chunks = self.data_loader.load_supplementary_chunks()
+        supplementary_matcher = None
+        if supplementary_chunks:
+            supplementary_matcher = SupplementaryMatcher(supplementary_chunks)
+            print(f"Loaded {len(supplementary_chunks)} supplementary chunks")
+
         if limit:
             questions = questions[:limit]
 
@@ -52,7 +60,7 @@ class Pipeline:
 
         # Generate answers
         answers = await self.answer_generator.generate_all_answers(
-            questions, matcher, progress_callback
+            questions, matcher, supplementary_matcher, progress_callback
         )
 
         return answers
@@ -80,12 +88,21 @@ class Pipeline:
         output_path.parent.mkdir(parents=True, exist_ok=True)
 
         # Build output data
+        active_improvements = {
+            "enable_maatwerk_examples": self.settings.enable_maatwerk_examples,
+            "enable_quote_before_conclude": self.settings.enable_quote_before_conclude,
+            "enable_verify_loop": self.settings.enable_verify_loop,
+            "enable_calibrated_confidence": self.settings.enable_calibrated_confidence,
+            "enable_model_guided_retrieval": self.settings.enable_model_guided_retrieval,
+        }
+
         output_data = {
             "metadata": {
                 "domain": domain,
                 "generated_at": datetime.now().isoformat(),
                 "total_questions": len(answers),
                 "model": self.settings.model,
+                "active_improvements": active_improvements,
             },
             "statistics": self._compute_statistics(answers),
             "answers": [a.model_dump() for a in answers],

@@ -25,6 +25,25 @@ class Settings(BaseModel):
     # Processing
     batch_size: int = 10
 
+    # Improvement flags
+    enable_maatwerk_examples: bool = False
+    enable_quote_before_conclude: bool = False
+    enable_verify_loop: bool = False
+    enable_calibrated_confidence: bool = False
+    enable_model_guided_retrieval: bool = False
+
+    # Iteration 14 flags (ablation-ready)
+    enable_nza_role_emphasis: bool = True
+    enable_vv_few_shot: bool = True
+    enable_section_citations: bool = True
+    enable_collaborative_framing: bool = True
+
+    # Iteration 16 flags (full-set patterns)
+    enable_nuanced_answers: bool = True
+    enable_case_by_case: bool = True
+    enable_procedural_knowledge: bool = True
+    max_answer_tokens: int = 800
+
     def get_nvi_path(self, domain: str) -> Path:
         """Get path to NvI JSON file for a domain."""
         return self.parsed_data_path / f"NvI-{domain}-2024-2026.json"
@@ -32,6 +51,10 @@ class Settings(BaseModel):
     def get_inkoopbeleid_path(self, domain: str) -> Path:
         """Get path to Inkoopbeleid JSON file for a domain."""
         return self.parsed_data_path / f"Inkoopbeleid-{domain}-2024-2026.json"
+
+    def get_supplementary_chunks_path(self) -> Path:
+        """Get path to supplementary chunks JSON file."""
+        return self.parsed_data_path / "extra" / "supplementary_chunks.json"
 
     def get_output_path(self, domain: str) -> Path:
         """Get path for output JSON file."""

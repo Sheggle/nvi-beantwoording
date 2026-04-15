@@ -1,0 +1,685 @@
+[
+  {
+    "id": "Q1",
+    "domain": "VV",
+    "section_nr": "4.1",
+    "question": "Essentiele voorzieningen zijn: Coördinatiefunctie, Voorzieningen voor spoedzorg, acute zorg en kortdurende zorg en verblijf, Avond-, nacht- en weekendzorg en Behandeling. Als je als zorgaanbieder geselecteerd wordt met een rol in essentiële voorzieningen, betekent dit automatisch dat je dan voor alle 4 de genoemde voorzieningen een trekkersrol dient te vervullen?",
+    "golden_answer": "Nee, dat is niet automatisch het geval. Vanaf 2024 gaat Zilveren Kruis met een beperkt aantal zorgaanbieders per regio gericht in gesprek en maakt afspraken over het borgen van de essentiële voorzieningen. Eén zorgaanbieder met een rol in essentiële voorzieningen hoeft niet alleen alle essentiële voorzieningen te trekken of borgen. Het is een gezamenlijke verantwoordelijkheid. Hoe dit het beste geborgd kan worden hangt af van de situatie en omstandigheden in de regio; zorgaanbieders spreken dit onderling af.",
+    "key_assertions": [
+      "must say 'nee' - niet automatisch alle 4 voorzieningen",
+      "must mention dat het een gezamenlijke verantwoordelijkheid is",
+      "must mention dat het afhangt van de situatie in de regio",
+      "must mention dat zorgaanbieders dit onderling afspreken"
+    ],
+    "source_sections": [
+      "4.1",
+      "4.1.1",
+      "4.1.2",
+      "4.1.3",
+      "4.1.4"
+    ],
+    "notes": "Original answer is clear and directly from section 4.1. AI answer was already quite good (scored 4). The key point is that one provider doesn't need to cover all 4 types of essential provisions."
+  },
+  {
+    "id": "Q2",
+    "domain": "GZ",
+    "section_nr": "8.3",
+    "question": "Een onduidelijkheid is er aangaande de begroting over 2024 die in het financieel plan moet worden opgenomen. Hierin wordt vermeld dat er een begroting moet worden gemaakt met splitsing van opbrengsten en kosten voor de verschillende domeinen. Wat wordt er bedoeld met verschillende domeinen?",
+    "golden_answer": "Hiermee wordt bedoeld dat als u zorg levert of gaat leveren vanuit andere financiering of wetgeving (domeinen) dan de Wlz, u de kosten en opbrengsten splitst per domein. Denk hierbij aan de Wlz, Zvw, Wmo en eventueel andere financieringsbronnen. Het gaat dus om de verschillende wettelijke financieringskaders, niet om zorgcategorieën binnen de Wlz.",
+    "key_assertions": [
+      "must explain that 'domeinen' refers to different legal/financial frameworks (wetgeving/financiering)",
+      "must mention examples like Wlz, Zvw, Wmo",
+      "must NOT interpret 'domeinen' as zorgcategorieën within the Wlz"
+    ],
+    "source_sections": [
+      "7.5",
+      "8.3"
+    ],
+    "notes": "Expert scored AI 1 because the AI misinterpreted 'domeinen' as zorgcategorieën within the Wlz. The correct meaning is different legal/financial domains (Wlz vs Zvw vs Wmo etc). This is a jargon issue."
+  },
+  {
+    "id": "Q3",
+    "domain": "GZ",
+    "section_nr": "7.2",
+    "question": "Wij zijn een gecontracteerde zorgaanbieder bij ZK, maar op dit moment nog geen 10 WLZ cliënten. Geldt deze regel ook voor reeds bestaande aanbieders. In 2024 verwachten wij uitbreiding.",
+    "golden_answer": "Nee, de norm van minimaal 10 Wlz-cliënten geldt vooralsnog niet voor zorgaanbieders die al in 2023 een overeenkomst met het zorgkantoor hebben. De bepaling uit sectie 7.2 is gericht op nieuwe zorgaanbieders die zich inschrijven voor contractering. Aangezien u reeds gecontracteerd bent, is deze regel niet op u van toepassing.",
+    "key_assertions": [
+      "must clearly state 'nee' or that the rule does not apply to existing providers",
+      "must explain that the 10-client rule applies to new providers (section 7.2 = new providers chapter)",
+      "must mention that existing contracted providers are exempt"
+    ],
+    "source_sections": [
+      "7.2"
+    ],
+    "notes": "Expert comment: 'Conclude if something doesn't apply that it therefore isn't the case'. The AI was too hedging. Section 7.2 is in chapter 7 about new providers. The reference answer directly says the norm doesn't apply to existing contracted providers."
+  },
+  {
+    "id": "Q4",
+    "domain": "VV",
+    "section_nr": "3.2",
+    "question": "Wat is doorslaggevend voor het afspraken maken in de regio wie welke zorg het beste kan leveren? Wie bepaalt dat? En wat zijn de criteria?",
+    "golden_answer": "In de regio stemmen zorgkantoor en zorgaanbieders met elkaar af hoe en met welke zorgaanbieder(s) de zorgvraag zo efficiënt en doelmatig kan worden geboden. Zilveren Kruis pakt als zorgkantoor een meer sturende rol en neemt regie voor het maken van afspraken. Waar mogelijk wordt aangesloten bij bestaande ontwikkelingen zoals het IZA, WOZO en GALA. De focus ligt op: zorg thuis waar mogelijk, intramuraal waar nodig, en het borgen van essentiële voorzieningen in de regio.",
+    "key_assertions": [
+      "must mention that it is a joint process between zorgkantoor and zorgaanbieders",
+      "must mention that Zilveren Kruis takes a steering role (sturende rol/regie)",
+      "must mention aansluiting bij IZA, WOZO, GALA or similar landelijke programma's",
+      "must mention efficient and doelmatige zorgverlening as guiding principle"
+    ],
+    "source_sections": [
+      "3.2"
+    ],
+    "notes": "Expert noted that adding IZA, WOZO, GALA docs is questionable. The answer comes from section 3.2 and the original NvI response. The focus should be on the regional consultation process."
+  },
+  {
+    "id": "Q5",
+    "domain": "GZ",
+    "section_nr": "5.14",
+    "question": "Ook als u zorg levert exclusief behandeling bent u verantwoordelijk voor de coördinatie van zorg en behandeling voor uw klanten. Wat houdt deze verantwoordelijkheid precies in?",
+    "golden_answer": "Dit betreft de professionele verantwoordelijkheid zoals beschreven in de bijlage Afkortingen en begrippen van het Voorschrift Zorgtoewijzing: een zorgprofessional heeft de taak en verantwoordelijkheid om mensen passende (medische) zorg en ondersteuning te verlenen volgens de voor de beroepsgroep geldende standaarden. Een zorgprofessional is verantwoordelijk voor het maken van duidelijke afspraken over verantwoordelijkheden, taken, dossiervorming (zorgplan), zorgcoördinatie en afstemming met andere betrokken zorgprofessionals rondom de (medische) zorgbehoefte van een cliënt.",
+    "key_assertions": [
+      "must reference the Voorschrift Zorgtoewijzing (bijlage Afkortingen en begrippen)",
+      "must mention duidelijke afspraken over verantwoordelijkheden, taken, dossiervorming",
+      "must mention zorgcoördinatie en afstemming met andere zorgprofessionals",
+      "must mention professionele standaarden voor de beroepsgroep"
+    ],
+    "source_sections": [
+      "5.14"
+    ],
+    "notes": "Expert said: 'First part is good. Add Voorschrift Zorgtoewijzing.' The key is referencing the Voorschrift Zorgtoewijzing definition of professional responsibility. The AI answer focused only on what was in the inkoopbeleid text, not the Voorschrift."
+  },
+  {
+    "id": "Q6",
+    "domain": "VV",
+    "section_nr": "7.3",
+    "question": "Een onduidelijkheid is er aangaande de begroting over 2024 die in het financieel plan moet worden opgenomen. Hierin wordt vermeld dat er een begroting moet worden gemaakt met splitsing van opbrengsten en kosten voor de verschillende domeinen. Wat wordt er bedoeld met verschillende domeinen?",
+    "golden_answer": "Hiermee wordt bedoeld dat als u zorg levert of gaat leveren vanuit andere financiering of wetgeving (domeinen) dan de Wlz, u de kosten en opbrengsten splitst per domein. Het gaat om de verschillende wettelijke financieringskaders, zoals de Wlz, Zvw en Wmo. De begroting moet dus inzichtelijk maken welke opbrengsten en kosten tot welk financieringsdomein behoren.",
+    "key_assertions": [
+      "must explain that 'domeinen' refers to different legal/financial frameworks (wetgeving/financiering)",
+      "must mention examples like Wlz, Zvw, Wmo",
+      "must NOT interpret 'domeinen' as zorgcategorieën within the Wlz"
+    ],
+    "source_sections": [
+      "8.5",
+      "8.6"
+    ],
+    "notes": "Same question as Q2 but for VV domain. Expert scored AI 1 with comment: 'Why doesn't the model interpret the text correctly?' The answer is the same: 'domeinen' refers to different funding domains (Wlz, Zvw, Wmo), not care categories within the Wlz."
+  },
+  {
+    "id": "Q7",
+    "domain": "GGZ",
+    "section_nr": "1.1",
+    "question": "Gesteld wordt dat met arbeidsbesparende innovaties meer cliënten geholpen kunnen worden. Het blijkt echter met de oplopende personeelstekorten al een enorme uitdaging om de huidige cliëntpopulatie van passende zorg voorzien. Houdt het zorgkantoor rekening met de waarschijnlijkheid dat de verwachting dat met arbeidsbesparende innovaties meer cliënten (nominaal gezien) kunnen worden geholpen niet realistisch is?",
+    "golden_answer": "Het zorgkantoor maakt zich ook zorgen over de tekorten van beschikbaar zorgpersoneel. Innovatie alleen zal hiervoor niet het enige antwoord bieden. Ook een kritische houding over het bieden van (intramurale) zorg, het samenwerken met andere aanbieders en het optimaliseren van personeelsinzet blijft onverminderd noodzakelijk. Daarnaast stelt ZN samen met branches en het Kenniscentrum Digitale Zorg een lijst met succesvolle initiatieven op die zich in de praktijk reeds bewezen hebben, conform het zorgtransformatiemodel van het Kenniscentrum Digitale Zorg. Het uitgangspunt is dat zorgaanbieders 3 succesvolle initiatieven implementeren binnen de beleidsperiode.",
+    "key_assertions": [
+      "must acknowledge that innovation alone is not sufficient",
+      "must mention other necessary measures besides innovation (e.g. samenwerking, optimaliseren personeelsinzet)",
+      "must mention succesvolle initiatieven or the list from Kenniscentrum Digitale Zorg",
+      "should reference het zorgtransformatiemodel of Kenniscentrum Digitale Zorg"
+    ],
+    "source_sections": [
+      "1.1",
+      "1.4.1",
+      "1.4.5",
+      "1.4.6"
+    ],
+    "notes": "Expert said: 'Reasonable answer. Add succesvolle initiatieven. Kenniscentrum Digitale Zorg on transformatiemodel is also mentioned in footnote.' The AI answer was too negative, saying there was no explicit mention. The reference answer acknowledges the concern but points to multiple measures."
+  },
+  {
+    "id": "Q8",
+    "domain": "GGZ",
+    "section_nr": "",
+    "question": "Verder is onduidelijk of een Zorgaanbieder die verlenging moet accepteren en onder welke voorwaarden die verlenging dan geaccepteerd moet/kan worden. Kunt u dit toelichten?",
+    "golden_answer": "Als Zilveren Kruis het beleid wil voortzetten, heeft het zorgkantoor de mogelijkheid om de overeenkomst tweemaal met een jaar te verlengen (2027 en 2028). Dit betreft een eenzijdige mogelijkheid voor het zorgkantoor, niet voor de zorgaanbieder. Na afloop van de overeenkomst (inclusief eventuele verlengingen) is er geen automatische verlenging. Zorgaanbieders kunnen dan opnieuw de afweging maken of ze zich willen inschrijven voor een Wlz-overeenkomst.",
+    "key_assertions": [
+      "must mention that Zilveren Kruis can extend twice by one year (2027 and 2028)",
+      "must mention that it is a unilateral option for the zorgkantoor (eenzijdig)",
+      "must mention that after expiry, providers can choose to re-register",
+      "must NOT say the answer is not in the policy"
+    ],
+    "source_sections": [
+      "6.9.2"
+    ],
+    "notes": "Expert says 'Check Charlotte on procedures'. This is a procedural question. The reference answer from the actual NvI is the authoritative source. Section 6.9.2 confirms the three-year contract with two one-year extensions."
+  },
+  {
+    "id": "Q9",
+    "domain": "GGZ",
+    "section_nr": "",
+    "question": "De tarief afslag op Wlz-Wonen 1 en 2 is onvoldoende transparant. Hoe is deze tot stand gekomen? Hoe is onderzocht of de tarieven van Wlz-Wonen 1 en 2 nog kostendekkend zijn?",
+    "golden_answer": "De NZa is verantwoordelijk voor het vaststellen van de tarieven per prestatie. De door het zorgkantoor geboden tariefpercentages zijn bepaald volgens de methodiek zoals toegelicht in bijlage 7. De op- en afslagen zijn getoetst door opnieuw te kijken welk aandeel van de GGZ-aanbieders een verwacht positief resultaat behaalt. Bij deze toets blijft het aandeel van de GGZ-aanbieders die een verwacht positief resultaat behaalt 75%, gelijk aan het uitgangspunt voor de landelijke toets. Zie paragraaf 2.3.2 voor de onderbouwing.",
+    "key_assertions": [
+      "must reference bijlage 7 as the methodology for tariff determination",
+      "must mention the 75% norm (75% of providers should have a positive result)",
+      "must mention that the NZa is responsible for setting the base tariffs",
+      "must reference section 2.3.2 for the specific justification of the surcharges/discounts"
+    ],
+    "source_sections": [
+      "2.3.1",
+      "2.3.2"
+    ],
+    "notes": "Expert said: 'Bijlage 7 better include in the prompt. Information about tarief en opslagen is missing. Try to have AI reference the 75% norm.' The AI completely failed to find any info. The key references are bijlage 7 (methodology) and section 2.3.2 (75% validation)."
+  },
+  {
+    "id": "Q10",
+    "domain": "GGZ",
+    "section_nr": "1.1",
+    "question": "Indien er aanvullend inkoopbeleid wordt gepubliceerd, wordt er dan ook weer een NvI ingericht?",
+    "golden_answer": "Ja, dan wordt er in principe een Nota van Inlichtingen ingericht.",
+    "key_assertions": [
+      "must answer 'ja'",
+      "must mention that a NvI will be set up in principle",
+      "must NOT say the answer is not in the policy"
+    ],
+    "source_sections": [
+      "1.1"
+    ],
+    "notes": "Expert says 'Procedure documentatie Charlotte'. This is a procedural answer from the actual NvI response. The policy text in 1.1 mentions that additional policy may be published, but the NvI procedure for additional policy is a procedural matter. Use the reference answer as golden."
+  },
+  {
+    "id": "Q11",
+    "domain": "VV",
+    "section_nr": "1.1",
+    "question": "Alinea 3; Het breder kijken naar een passend antwoord dan alleen zorg bij een hulpvraag vergt meer tijd, kennis en kunde. Kunt u nader aangeven op welke manier zorgaanbieders gecompenseerd worden om deze werkwijze te implementeren?",
+    "golden_answer": "De NZa-beleidsregel voor modulaire zorg beschrijft onder andere bij de prestatie Persoonlijke Verzorging Basis (PV basis H126) dat dit ook advies, instructie en voorlichting aan de cliënt omvat die in directe relatie staan met de persoonlijke verzorging, inclusief het adviseren van informele zorgers. De financiering van VPT en intramurale zorg biedt veel ruimte om op andere manieren invulling te geven aan de zorg, doordat er wordt gewerkt met integrale tarieven. Er wordt een bedrag per dag gefinancierd, waardoor zorgaanbieders die door inzet op zelfredzaamheid meer klanten kunnen bedienen, extra inkomsten genereren. Zorgkantoren volgen hierin de wet- en regelgeving van de NZa.",
+    "key_assertions": [
+      "must mention that VPT and intramurale zorg use integrale tarieven which provide room for different approaches",
+      "must mention that the NZa beleidsregel/prestatiebeschrijvingen describe what activities are included",
+      "must mention that zorgkantoren follow NZa wet- en regelgeving for financing",
+      "should mention that more efficient care delivery through zelfredzaamheid can lead to serving more clients"
+    ],
+    "source_sections": [
+      "1.1",
+      "1.2.2"
+    ],
+    "notes": "Expert scored 2. The reference answer is detailed, mentioning NZa beleidsregel modulaire zorg, PV basis H126, and the integrale tarieven. The AI said no specific compensation is mentioned, which is wrong - the integrale tarieven provide the mechanism."
+  },
+  {
+    "id": "Q12",
+    "domain": "GGZ",
+    "section_nr": "",
+    "question": "U schrijft dat Zilveren Kruis de mogelijkheid heeft om het zorginkoopbeleid met tweemaal een jaar te verlengen. Kunt u aangeven welke criteria u hiervoor aanhoudt?",
+    "golden_answer": "Zilveren Kruis onderzoekt in 2026 of haar beleid nog voldoende aansluit bij de ontwikkeling van de GGZ en maatschappelijke trends en ontwikkelingen. Als Zilveren Kruis het beleid wil voortzetten, heeft het de mogelijkheid om de overeenkomst tweemaal met een jaar te verlengen (2027 en 2028). Het gaat hierbij om een beoordeling of het beleid nog passend is bij de dan geldende ontwikkelingen.",
+    "key_assertions": [
+      "must mention that Zilveren Kruis assesses in 2026 whether the policy still fits",
+      "must mention alignment with GGZ developments and maatschappelijke trends",
+      "must mention the extension possibility for 2027 and 2028",
+      "must NOT say the answer is not in the policy"
+    ],
+    "source_sections": [
+      "6.9.2",
+      "6.7"
+    ],
+    "notes": "Expert says 'Check Charlotte'. The reference answer from the NvI states the criteria. The AI gave an incorrect answer about 'geen bijzonderheden' which refers to individual provider assessment (6.9.2), not policy extension criteria."
+  },
+  {
+    "id": "Q13",
+    "domain": "VV",
+    "section_nr": "6.12",
+    "question": "De inzet van technologie wordt gestimuleerd maar is gelimiteerd in 6,5 uur per maand. Indien er sprake is van meerdere zorgvormen, dan geldt dat er voor deze verschillende zorgvormen bij elkaar opgeteld maximaal 6,5 uur vergoed worden. Als meer technologie moet worden ingezet is die 6,5 uur bij lange na niet voldoende. Wat gaat het zorgkantoor hieraan doen?",
+    "golden_answer": "De NZa stelt de prestatiecodes op en bepaalt de inhoud daarvan. Zilveren Kruis kan de prestatiecodes en de hoogte daarvan niet zelf bepalen. Onze ervaring in de praktijk is dat de 6,5 uur toereikend zijn. Wij verwachten daarom geen belemmeringen.",
+    "key_assertions": [
+      "must mention that the NZa is responsible for setting prestatiecodes and their content",
+      "must mention that Zilveren Kruis cannot unilaterally change the prestatiecodes",
+      "must indicate that the current 6.5 hours are considered sufficient in practice"
+    ],
+    "source_sections": [
+      "6.12"
+    ],
+    "notes": "Expert scored 2 and said 'Add beleidsregels'. The reference answer is the NvI response. The key point is that the NZa determines the prestaties, not the zorgkantoor. The AI didn't capture this important distinction."
+  },
+  {
+    "id": "Q14",
+    "domain": "GZ",
+    "section_nr": "4.4",
+    "question": "In 4.4. wordt aangegeven dat Zilveren Kruis stuurt op voldoende geschikt vastgoed. Wat verstaat Zilveren Kruis onder voldoende geschikt vastgoed? Wij vertegenwoordigen als coöperatie ruim 250 kleinschalige zorgaanbieders met elk hun eigen (vastgoed)exploitatie en jaarrekening. Onze zorgaanbieders leveren uitsluitend WLZ-zorg op basis van MPT en VPT. Hoe verwacht het zorgkantoor van coöperaties de volgende zaken: Verantwoording van de huisvestingscomponent, Inzichtelijk maken van zorgvastgoed exploitatie bij gescheiden wonen en zorg, Opstellen van een strategisch huisvestingsplan, Vastgoedbeheerplan (green deal)?",
+    "golden_answer": "Onder voldoende geschikt vastgoed verstaan we dat er voldoende vastgoed beschikbaar is waar onder normale omstandigheden Wlz-zorg geleverd kan worden en waar de huisvesting voldoet aan vereisten op het gebied van veiligheid en duurzaamheid. Als coöperatie bent u het aanspreekpunt voor het zorgkantoor. Het is aan u om hierover afspraken te maken met de leden van de coöperatie. Als de aangesloten aanbieders uitsluitend zorg thuis leveren in een ongeclusterde setting, is er geen sprake van een huisvestingscomponent en hoeft daar ook geen verantwoording over afgelegd te worden. Indien zorg geleverd wordt in een geclusterde setting, verwachten wij dat er zicht is op de benodigde huisvesting(skosten) en de verduurzaming van het vastgoed. De verantwoording van de NHC is specifiek verbonden aan zorgaanbieders die intramurale zorg leveren.",
+    "key_assertions": [
+      "must define voldoende geschikt vastgoed (veiligheid, duurzaamheid, geschikt voor Wlz-zorg)",
+      "must mention that the coöperatie is the aanspreekpunt for the zorgkantoor",
+      "must distinguish between ongeclusterde setting (geen huisvestingscomponent) and geclusterde setting",
+      "must mention that NHC verantwoording only applies to intramurale zorg",
+      "must mention that for exclusively MPT/VPT in ongeclusterd, huisvestingscomponent does not apply"
+    ],
+    "source_sections": [
+      "4.4"
+    ],
+    "notes": "Expert scored 1. The AI gave a generic answer without addressing the specific MPT/VPT situation. The key insight from the reference answer is that for ongeclusterde MPT/VPT there is no huisvestingscomponent to account for."
+  },
+  {
+    "id": "Q15",
+    "domain": "GGZ",
+    "section_nr": "",
+    "question": "U geeft aan dat Bijlage 6 Voorschrift zorgtoewijzing volgt na publicatie. Daarmee is het onmogelijk om zicht te hebben op hetgeen artikel 1, lid 1 van deel III (zorglevering) en artikel 6 van deel III (zorgweigering en -beëindiging) voor Zorgaanbieders zou kunnen betekenen. Op welke wijze wordt de Zorgaanbieder in staat gesteld om vragen over dit Voorschrift te stellen nu dit niet kan d.m.v. de Nota van Inlichting en op welke wijze kan zij eventueel inhoudelijk bezwaar tegen dit voorschrift aantekenen?",
+    "golden_answer": "Het Voorschrift Zorgtoewijzing wordt elk jaar geactualiseerd op geldende wet- en regelgeving en bevat geen inkoopvoorwaarden. Het is daarom geen onderdeel van de inkoopprocedure waartegen via de NvI vragen gesteld of bezwaar aangetekend kan worden.",
+    "key_assertions": [
+      "must mention that the Voorschrift Zorgtoewijzing is updated annually based on wet- en regelgeving",
+      "must mention that it contains no inkoopvoorwaarden",
+      "must explain why it is not part of the NvI process",
+      "must NOT say the answer is not in the policy"
+    ],
+    "source_sections": [],
+    "notes": "Expert says 'Check Charlotte for NvI procedure document'. This is a procedural answer from the NvI. The key point is that the Voorschrift Zorgtoewijzing is separate from the inkoopbeleid and follows existing regulation."
+  },
+  {
+    "id": "Q16",
+    "domain": "GGZ",
+    "section_nr": "1.1",
+    "question": "U geeft aan dat u mogelijk aanvullend inkoopbeleid publiceert aan de hand van de uitkomsten van de bestuurlijke ontwikkelingen die worden gemaakt met betrekking tot de instroom en het kostenonderzoek. Betekent publiceren in dit geval dat u eenzijdig publiceert of hebben gecontracteerde aanbieders hier nog invloed op? Kunt u toelichten hoe dat proces eruit gaat zien en kunt u bevestigen dat besluitvorming hierin niet eenzijdig is?",
+    "golden_answer": "Het zorgkantoor herijkt elk kalenderjaar of het zorginkoopbeleid nog passend is bij de dan geldende wet- en regelgeving. Het is niet uitgesloten dat, gezien de omvangrijke onderwerpen die spelen in de GGZ, een herijking kan plaatsvinden. Net als dit jaar zullen we belangrijke ontwikkelingen afstemmen met branchevertegenwoordigers en vertegenwoordigers van zorgaanbieders.",
+    "key_assertions": [
+      "must mention jaarlijkse herijking of het inkoopbeleid",
+      "must mention afstemming met branchevertegenwoordigers en zorgaanbieders",
+      "must indicate that it is not purely unilateral - there is consultation",
+      "must NOT say the information is not in the policy"
+    ],
+    "source_sections": [
+      "1.1",
+      "6.7"
+    ],
+    "notes": "Expert says: 'Why not described in policy? Is it elsewhere? Check Charlotte.' The reference answer from the NvI is the authoritative source. Section 6.7 mentions the right to change policy, and 1.1 mentions following developments and potentially publishing additional policy."
+  },
+  {
+    "id": "Q17",
+    "domain": "GZ",
+    "section_nr": "6.9",
+    "question": "Om te kunnen voldoen aan de zorgplicht, is het noodzakelijk dat zorgkantoren met voldoende zorgaanbieders contracten sluiten. Het proces voor zorgaanbieders om in te schrijven voor een overeenkomst, biedt geen mogelijkheid, althans wordt van een dergelijke mogelijkheid geen gebruik gemaakt, om een inschrijving aan te vullen of toe te lichten als er sprake is van geringe afwijkingen ten opzichte van het gevraagde of onduidelijkheden die zonder nieuwe informatie te verstrekken kunnen worden toegelicht. In lijn met de aanbestedingsprincipes, kunnen zorgkantoren inschrijvers de mogelijkheid bieden om de inschrijving te verbeteren of aan te vullen, als het slechts een eenvoudige precisering betreft of het herstel van een kennelijke materiële fout. Bent u bereid om de mogelijkheid tot het aanvullen of verduidelijken van een inschrijving zoals hierboven bedoeld expliciet op te nemen?",
+    "golden_answer": "In het inkoopbeleid is reeds de volgende passage opgenomen: zorgkantoren hebben na inschrijving de bevoegdheid (maar niet de verplichting) om een zorgaanbieder te vragen zijn inschrijving toe te lichten. De zorgaanbieder heeft dan vijf werkdagen de tijd om de gevraagde toelichting aan te leveren bij het zorgkantoor. Hierna kan de inschrijving definitief worden beoordeeld. Aan het enkel vragen van een (nadere) toelichting door het zorgkantoor kunnen geen rechten of toezeggingen worden ontleend.",
+    "key_assertions": [
+      "must quote or reference the existing bevoegdheid tot toelichting vragen (already in the policy)",
+      "must mention the 5 werkdagen term for providing clarification",
+      "must mention that it is a bevoegdheid, not a verplichting of the zorgkantoor",
+      "must mention that no rights or commitments can be derived from the request for clarification",
+      "must NOT suggest changes to the policy"
+    ],
+    "source_sections": [
+      "6.9.1"
+    ],
+    "notes": "Expert scored 1 and said: 'Just say no if something can't be found in the text. Model should not propose changes to the text.' The reference answer points to the existing passage in 6.9.1 that already provides the mechanism the questioner asks for."
+  },
+  {
+    "id": "Q18",
+    "domain": "VV",
+    "section_nr": "1.1",
+    "question": "In het inkoopbeleid 2024 - 2026 wordt niets meer genoemd over een strategisch partnerschap met zorgaanbieders. Hoe zit het met de huidige strategische partnerschappen die gesloten zijn met zorgaanbieders vanaf 2024?",
+    "golden_answer": "De strategische partnerschappen die zijn gesloten gelden voor de afgesproken tijdsperiode. In paragraaf 6.18 is beschreven dat we met proactieve en innovatieve zorgaanbieders blijven samenwerken aan toekomstbestendige initiatieven.",
+    "key_assertions": [
+      "must mention that existing strategic partnerships remain valid for their agreed period",
+      "must reference section 6.18 (afspraken op maat / samenwerking met innovatieve aanbieders)",
+      "must NOT say strategic partnerships are no longer mentioned or relevant"
+    ],
+    "source_sections": [
+      "6.18",
+      "1.1"
+    ],
+    "notes": "Expert scored 1 and said: 'Does not reference the correct section'. The AI completely missed section 6.18 which describes continued collaboration with proactive and innovative providers. The reference answer correctly points to 6.18."
+  },
+  {
+    "id": "Q19",
+    "domain": "GZ",
+    "section_nr": "6.1",
+    "question": "De NZa tarieven zijn op dit moment nog niet bekend. Voor het Contracteerproces betekent dit dat er geen volledige transparantie is. Het is daarom niet mogelijk te weten waar een zorgaanbieder voor tekent. Is het zorgkantoor bereid de inkoopprocedure aan te passen zodat er na de bekendmaking van de NZa tarieven nog voldoende mogelijkheden zijn om vragen te stellen en na te gaan wat de impact is van de tarieven?",
+    "golden_answer": "Nee, de zorgkantoren passen hierop de inkoopprocedure niet aan en zullen geen extra mogelijkheid creëren om vragen te stellen. Zoals ieder jaar publiceert de NZa pas op of rond 1 juli de tarieven. Zorgkantoren hanteren bepaalde termijnen omdat het inkoopproces tijdig afgerond moet worden in verband met het indienen van de budgetformulieren bij de NZa op 15 november.",
+    "key_assertions": [
+      "must clearly say 'nee', the procedure will not be adjusted",
+      "must mention that the NZa publishes tariffs around 1 July each year",
+      "must mention the deadline pressure (budgetformulieren bij NZa op 15 november)",
+      "must NOT suggest the procedure could be adapted"
+    ],
+    "source_sections": [
+      "6.1"
+    ],
+    "notes": "Expert scored 1 and asked: 'Why doesn't the model read the table with dates correctly?' The AI failed to give a clear no. The reference answer is direct: no adaptation, with reasoning about timing constraints."
+  },
+  {
+    "id": "Q20",
+    "domain": "GZ",
+    "section_nr": "4.2",
+    "question": "In het Inkoopdocument schrijft u over spiegelinformatie waarmee u zorgaanbieders vergelijkt en zorgaanbieders inzicht geeft (bijvoorbeeld t.a.v. MPT/VPT, kosten in relatie tot doelmatigheid). Hoe specifiek deelt u informatie met andere zorgaanbieders? Op welke manier houdt u rekening met de reële vergelijkbaarheid van zorgaanbieders?",
+    "golden_answer": "De analyse en eventuele afspraken over de uitkomsten daarvan maken bewust onderdeel uit van het inkoopgesprek. In de analyse staat geen herleidbare bedrijfsvoeringinformatie. Het gaat Zilveren Kruis om de gezamenlijke duiding (tussen zorgaanbieder en inkoper) van de analyse en de daarbij horende mogelijkheden. Ook de verklarende factoren (waarom afspraken over bijvoorbeeld een hoger aandeel VPT/MPT mogelijk niet passend zijn) komen aan bod.",
+    "key_assertions": [
+      "must mention that spiegelinformatie is discussed in het inkoopgesprek",
+      "must mention that the analysis contains no herleidbare bedrijfsvoeringinformatie (not traceable to individual providers)",
+      "must mention the gezamenlijke duiding between provider and inkoper",
+      "must mention that verklarende factoren are also considered"
+    ],
+    "source_sections": [
+      "4.2"
+    ],
+    "notes": "Expert scored 1 and said: 'Perhaps earlier NvI's already contain this info.' The AI couldn't find the specific answer. The reference answer from the actual NvI explains how spiegelinformatie is shared confidentially in the inkoopgesprek."
+  },
+  {
+    "id": "Q21",
+    "domain": "GZ",
+    "section_nr": "6.1",
+    "question": "De bijlagen zijn opvolgend genummerd. Bijlage 6 ontbreekt. Wanneer wordt bijlage 6 gepubliceerd?",
+    "golden_answer": "Bijlage 6 betreft het voorschrift zorgtoewijzing. De nieuwe versie van het voorschrift zorgtoewijzing wordt uiterlijk op 1 december 2023 gepubliceerd.",
+    "key_assertions": [
+      "must identify Bijlage 6 as het Voorschrift Zorgtoewijzing",
+      "must mention the publication date: uiterlijk 1 december 2023",
+      "must NOT say the information is not in the policy"
+    ],
+    "source_sections": [
+      "6.1",
+      "6.8.5"
+    ],
+    "notes": "Expert comment: should be derivable from the inkoopbeleid, chapter 6. The reference answer is from the NvI. The AI failed to identify what Bijlage 6 is. The Voorschrift Zorgtoewijzing is referenced in sections 3.7 and elsewhere."
+  },
+  {
+    "id": "Q22",
+    "domain": "GZ",
+    "section_nr": "2.3",
+    "question": "Er wordt gesproken over regionaal inkoopbeleid. Tegelijk heeft zilveren kruis diverse, ook erg verschillende, regio's. In hoeverre kan er dan gesproken worden over regionaal inkoopbeleid?",
+    "golden_answer": "Het regionale inkoopbeleid is voor de regio's van Zilveren Kruis gelijk, maar de invulling (bijvoorbeeld samenwerkingsafspraken in de regio) kan verschillend zijn per zorgkantoorregio.",
+    "key_assertions": [
+      "must state that the regional policy is the same across regions",
+      "must mention that the implementation/invulling can differ per zorgkantoorregio",
+      "should be concise and directly answer the question"
+    ],
+    "source_sections": [
+      "2.3",
+      "2.1"
+    ],
+    "notes": "Expert scored 3 with comment: give only relevant info for answering the question. The reference answer is brief and clear: policy is the same, implementation differs per region."
+  },
+  {
+    "id": "Q23",
+    "domain": "GZ",
+    "section_nr": "3.8",
+    "question": "Hoe gaan zorgaanbieders de noodzakelijke investeringen en kosten voor verduurzaming vergoed krijgen, mede nu de NHC vanaf 2024 gaat dalen en de rente is gestegen?",
+    "golden_answer": "Het zorgkantoor gaat niet over de maximum tarieven van de NZa. Eventuele vragen daarover verzoeken wij u te stellen aan de NZa. Zilveren Kruis vergoedt 100% van de NHC/NIC-component. Meer kan en mag niet.",
+    "key_assertions": [
+      "must mention that the NZa sets the maximum tariffs, not the zorgkantoor",
+      "must mention that Zilveren Kruis vergoedt 100% van de NHC/NIC",
+      "must refer questions about NZa tariffs to the NZa",
+      "must NOT speculate about alternative funding mechanisms"
+    ],
+    "source_sections": [
+      "3.8",
+      "4.4"
+    ],
+    "notes": "Expert scored 1 with comment: look at previous NvIs. The reference answer is clear: the zorgkantoor cannot change NZa tariffs and already pays 100% NHC/NIC. Section 3.8 confirms the 100% NHC/NIC policy."
+  },
+  {
+    "id": "Q24",
+    "domain": "GZ",
+    "section_nr": "2.1",
+    "question": "Begrijp ik goed dat het programmamanagement betaald wordt uit de transitiemiddelen?",
+    "golden_answer": "Ja, dat klopt. In paragraaf 2.1 staat dat Zilveren Kruis het programmamanagement bekostigt in het kader van de pilot 'de regio van de toekomst'. De transitiemiddelen (het regionaal stimuleringsbudget, zie paragraaf 2.3 en bijlage 4) worden ingezet voor regionale samenwerking, waaronder het programmamanagement.",
+    "key_assertions": [
+      "must answer ja/bevestigend",
+      "must reference section 2.1 or the pilot regio van de toekomst",
+      "must connect programmamanagement to transitiemiddelen/regionaal stimuleringsbudget",
+      "must NOT say the information is not in the policy"
+    ],
+    "source_sections": [
+      "2.1",
+      "2.3"
+    ],
+    "notes": "Expert scored 1 with comment: it is in the inkoopbeleid, derivable from the chapter. Section 2.1 says ZK bekostigt het programmamanagement, and 2.3 describes the transitiemiddelen (regionaal stimuleringsbudget) in bijlage 4."
+  },
+  {
+    "id": "Q25",
+    "domain": "GZ",
+    "section_nr": "2.5",
+    "question": "\"Bij het maken van de afspraken wordt vastgelegd op welke wijze partijen de voortgang en resultaten monitoren en verantwoorden.\" en \"Waarbij het uitgangspunt is de verantwoordingslast te beperken.\" Hoe gaat het Zorgkantoor invulling geven aan het uitgangspunt om de verantwoordingslast te beperken?",
+    "golden_answer": "De mate waarin het lukt om de verantwoordingslast te beperken is afhankelijk van de afspraken die worden vastgelegd. Het is ons uitgangspunt bij het maken van de afspraken dat we de verantwoordingslast beperken. De verantwoording kan per regio en afspraak verschillen en vindt plaats op basis van de gemaakte afspraken.",
+    "key_assertions": [
+      "must mention that the level of verantwoording depends on the agreements made",
+      "must confirm that beperken van verantwoordingslast is indeed the starting point",
+      "must mention that verantwoording can differ per regio and afspraak",
+      "should NOT add speculative details not in the policy"
+    ],
+    "source_sections": [
+      "2.5"
+    ],
+    "notes": "Expert scored 3 with comment: not the entire answer addresses the question. The reference answer acknowledges the principle without overcomplicating it."
+  },
+  {
+    "id": "Q26",
+    "domain": "GZ",
+    "section_nr": "3.1",
+    "question": "Kunt u aangeven wat het zorgkantoor classificeert als hoge of lage zorg en hoe u tot deze keuze komt?",
+    "golden_answer": "Hierbij betrekken we een aantal componenten, namelijk: de duiding/beschrijving van de doelgroep, de mate van gedragsproblematiek, de inzet van psychiatrische zorg, en de mate waarin de kostendekkendheid van tarieven leidt tot risico's voor de zorgplicht in de Zilveren Kruis regio's.",
+    "key_assertions": [
+      "must mention doelgroep duiding/beschrijving as a component",
+      "must mention mate van gedragsproblematiek",
+      "must mention inzet van psychiatrische zorg",
+      "must mention kostendekkendheid en zorgplichtrisico's",
+      "must NOT say the information is not in the policy"
+    ],
+    "source_sections": [
+      "3.1",
+      "3.4"
+    ],
+    "notes": "Expert scored 1 with comment: missing the right info from the inkoopbeleid. The reference answer lists four specific components. Section 3.4 discusses the tariefsystematiek for hoog complexe and essentiële zorg."
+  },
+  {
+    "id": "Q27",
+    "domain": "GZ",
+    "section_nr": "3.1",
+    "question": "Vraag: In het inkoopbeleid staat dat u zorgaanbieders duidelijkheid geeft voor meerdere jaren over tariefpercentages en dat deze gelden voor de looptijd van het inkoopbeleid (2024-2026). Dit lijkt te gaan over de landelijke systematiek en (richt)tariefpercentages. Kunt u aangeven of dat wel of niet ook geldt voor de tariefpercentages die door Zilveren Kruis Zorgkantoor worden toegepast?",
+    "golden_answer": "De looptijd (2024-2026) geldt voor alle tariefpercentages in ons beleid. De 7VG is daarop de uitzondering. Daarvoor lopen nog kostenonderzoeken.",
+    "key_assertions": [
+      "must confirm that the 2024-2026 period applies to all tariff percentages in the policy",
+      "must mention 7VG as the exception",
+      "must mention that kostenonderzoeken still running for 7VG",
+      "should be concise"
+    ],
+    "source_sections": [
+      "3.1"
+    ],
+    "notes": "Expert scored 2 with comment: limits answer too much to one section and gives unnecessary info. The reference answer is direct: yes, applies to all, except 7VG."
+  },
+  {
+    "id": "Q28",
+    "domain": "GZ",
+    "section_nr": "5.3",
+    "question": "Met ingang van 2024 geldt dat een sectorvreemde prestatie wordt vergoed op basis van het tariefpercentage uit de ('vreemde') sector waar de indicatie van de klant uit afkomstig is. Houdt dit in dat sectorvreemde indicaties niet meer omgekat dienen te worden d.m.v. de omrekentabel per 1-1-2024. En dienen indicaties die voor 1-1-2024 omgekat zijn, teruggezet te worden naar de originele indicatie/prestatie.",
+    "golden_answer": "In overleg met de zorginkoper wordt bepaald of de zorgaanbieder de sectorvreemde prestatie ook declareert. Als dit niet het geval is, bijvoorbeeld omdat de zorgaanbieder deze specifieke zorg niet levert, is het alsnog mogelijk om de indicatie om te zetten via de vertaaltabel uit het Voorschrift Zorgtoewijzing.",
+    "key_assertions": [
+      "must mention that it is determined in consultation with the zorginkoper",
+      "must mention the vertaaltabel uit het Voorschrift Zorgtoewijzing as alternative",
+      "must indicate that omzetting nog steeds mogelijk is als de aanbieder de zorg niet levert",
+      "must NOT say the information is not available"
+    ],
+    "source_sections": [
+      "5.3"
+    ],
+    "notes": "Expert scored 1 with comment: Voorschrift Zorgtoewijzing contains this table. The reference answer from the NvI points to the vertaaltabel in the Voorschrift Zorgtoewijzing. Section 5.3 confirms the overleg met de zorginkoper."
+  },
+  {
+    "id": "Q29",
+    "domain": "GZ",
+    "section_nr": "6.1",
+    "question": "Benoemd wordt dat nog te publiceren documenten integraal onderdeel uitmaken van de overeenkomst. We kunnen niet instemmen met nog nader te publiceren documenten aangezien de inhoud en impact hiervan vooraf niet bekend zijn. Hiertegen hebben wij bezwaar.",
+    "golden_answer": "Wij nemen aan dat vraagsteller hier op het nog niet gepubliceerd zijn van het Voorschrift Zorgtoewijzing doelt. Het Voorschrift Zorgtoewijzing beschrijft de processen en uit te voeren acties rond de zorgtoewijzing. De reden om het Voorschrift Zorgtoewijzing later te publiceren is tweeledig. Ten eerste worden de nieuwe beleidsregels van de NZa m.b.t. de Wlz op 1 juli gepubliceerd en ten tweede kunnen er veranderingen worden doorgevoerd in het berichtenverkeer iWlz per 1 januari die nu nog niet bekend zijn. Beide onderdelen kunnen van invloed zijn op de inhoud van het Voorschrift Zorgtoewijzing. Dit is de reden dat deze later wordt gepubliceerd.",
+    "key_assertions": [
+      "must identify the Voorschrift Zorgtoewijzing as the document in question",
+      "must explain the two reasons for later publication: NZa beleidsregels (1 juli) and iWlz berichtenverkeer changes",
+      "must NOT add own interpretations or suggest changes to the policy",
+      "must NOT validate or agree with the objection in a way that implies policy change"
+    ],
+    "source_sections": [
+      "6.1",
+      "6.8.5"
+    ],
+    "notes": "Expert scored 1 with comment: model adds own info, that is not desired, especially for objections. The reference answer explains the reason for later publication without agreeing to change the policy."
+  },
+  {
+    "id": "Q30",
+    "domain": "GZ",
+    "section_nr": "8.3",
+    "question": "In het bedrijfsplan moet beschreven worden aa welke doelgroep, welke leveringsvormen en welke zorgprestaties (in termen van de NZa beleidsregels) geleverd gaan worden. Waar kunnen we de zorgprestaties vinden en ons op baseren als nieuwe aanbieder?",
+    "golden_answer": "De beleidsregels waar de zorgprestaties in staan, vindt u op de website van de NZa.",
+    "key_assertions": [
+      "must direct the questioner to the NZa website",
+      "must mention that the zorgprestaties are defined in the NZa beleidsregels",
+      "should be concise and direct"
+    ],
+    "source_sections": [
+      "7.5",
+      "8.3"
+    ],
+    "notes": "Expert scored 4 with comment: refer directly to the website. The AI answer was already reasonable but should have been more direct with a link/reference to NZa website."
+  },
+  {
+    "id": "Q31",
+    "domain": "GGZ",
+    "section_nr": "6.2",
+    "question": "Het door u aangeboden format voor de Nota van Inlichtingen biedt helaas niet de mogelijkheid om over het voorwoord en managementsamenvatting vragen te stellen. Kunt u dit aanpassen?",
+    "golden_answer": "Dat kan helaas niet, wel kunt u de vraag stellen bij de specifieke paragraaf in het inkoopbeleid waar het thema wordt toegelicht.",
+    "key_assertions": [
+      "must answer nee/helaas niet",
+      "must suggest the alternative: ask the question at the specific relevant paragraph",
+      "must NOT say the answer is not in the policy"
+    ],
+    "source_sections": [
+      "6.2",
+      "6.5"
+    ],
+    "notes": "Expert scored 2 with comment: check Charlotte for NvI procedure document. This is a procedural answer from the NvI. The format cannot be changed but questions can be placed at the relevant section."
+  },
+  {
+    "id": "Q32",
+    "domain": "GGZ",
+    "section_nr": "1.1",
+    "question": "Gesteld wordt dat een neveneffect van eigen regie kan zijn dat de zorgvraag van een cliën afneemt. (Hoe) wordt deze aanname getoetst?",
+    "golden_answer": "Uit wetenschappelijk onderzoek blijkt dat de zorgvraag van cliënten kan afnemen door herstelgericht werken en het bevorderen van zelfredzaamheid.",
+    "key_assertions": [
+      "must reference wetenschappelijk onderzoek as basis",
+      "must mention herstelgericht werken and/or zelfredzaamheid",
+      "must NOT dismiss the premise of the question",
+      "must NOT say the answer is not in the policy"
+    ],
+    "source_sections": [
+      "1.1",
+      "1.3"
+    ],
+    "notes": "Expert scored 2 with comment: Kennisinstituut Frenos has knowledge articles about the WLZ, add what concerns WLZ. Section 1.1 mentions that eigen regie kan leiden tot afname zorgvraag because care is delivered more tailored."
+  },
+  {
+    "id": "Q33",
+    "domain": "GGZ",
+    "section_nr": "1.1",
+    "question": "U schrijft dat de tijd van vrijblijvend innov voorbij is. Aansluitend schrijft u dat in de het implementeren van arbeidsbesparende innovaties vanzelfsprekend is. Het lijkt daar dat de nadruk ligt op een type innovatie name de arbeidsmatige. Klopt dit?",
+    "golden_answer": "Dit is correct. Bij de innovaties leggen wij de focus in de GGZ op arbeidsbesparing.",
+    "key_assertions": [
+      "must confirm: ja/correct",
+      "must mention that the focus in GGZ is on arbeidsbesparende innovaties",
+      "should be concise"
+    ],
+    "source_sections": [
+      "1.1",
+      "1.4.1"
+    ],
+    "notes": "Expert scored 4. The reference answer is brief and confirms the premise. Section 1.1 states: het is vanzelfsprekend dat zorgaanbieders in de GGZ arbeidsbesparende innovaties implementeren."
+  },
+  {
+    "id": "Q34",
+    "domain": "VV",
+    "section_nr": "7.7",
+    "question": "Komt er een overzicht van de wijzigingen in het zorginkoopbeleid ten opzichte van het voorgaande zorginkoopbeleid?",
+    "golden_answer": "Nee, daar voorzien wij niet in.",
+    "key_assertions": [
+      "must answer nee",
+      "must be concise",
+      "must NOT say the answer is not in the policy"
+    ],
+    "source_sections": [
+      "7.7"
+    ],
+    "notes": "Expert scored 2 with comment: more concise formulation. The reference answer is extremely brief. The AI gave a long, hedging answer instead of a clear no."
+  },
+  {
+    "id": "Q35",
+    "domain": "VV",
+    "section_nr": "2.3",
+    "question": "Het landelijk richttariefpercentage is geen minimum- of maximumtarief. Wij zijn een reguliere (bestaande)V&V aanbieder en opteren niet voor een vrijwillig lager tariefpercentage. Kunnen wij er dan vanuit gaan dat ons richttariefpercentage voor de komende drie jaar minimaal 95,5% is?",
+    "golden_answer": "We geven duidelijkheid over het tariefpercentages voor de komende jaren. Voor reguliere zorgaanbieders die al een overeenkomst hebben geldt inderdaad het tariefpercentage van 95,5% voor 2024-2026. Er zijn enkele uitzonderingen hierover leest u meer in paragraaf 2.4.2, 2.4.3 en 2.4.4 van het inkoopbeleid V&V. We kunnen u net als in andere jaren geen 100% zekerheid geven. Het kan zijn dat het inkoopbeleid aangevuld of aangepast wordt. U leest hierover meer in paragraaf 7.7 van het inkoopbeleid van V&V.",
+    "key_assertions": [
+      "must confirm that 95,5% applies for 2024-2026 for reguliere bestaande aanbieders",
+      "must mention uitzonderingen and reference sections 2.4.2, 2.4.3 and/or 2.4.4",
+      "must mention that 100% zekerheid cannot be given due to possible policy changes (section 7.7)",
+      "must NOT simply say nee without nuance"
+    ],
+    "source_sections": [
+      "2.3",
+      "2.4",
+      "2.4.2",
+      "2.4.3",
+      "2.4.4",
+      "7.7"
+    ],
+    "notes": "Expert scored 1 with comment: model does not look at paragraph 7. The AI gave a flat nee which is wrong. The reference answer confirms the 95,5% but adds important caveats about exceptions and the possibility of policy changes."
+  },
+  {
+    "id": "Q36",
+    "domain": "VV",
+    "section_nr": "2.8",
+    "question": "Bent u niet van mening dat tarieven afdoende hoog moeten zijn om een operationele exploitatie te kunnen voeren Wat is de deadline om gebruik te kunnen maken van de hardheidsclausule?",
+    "golden_answer": "De tariefsystematiek beoogt een reëel tarief te bieden voor een redelijke efficiënt functionerend zorgaanbieder. Het is echter mogelijk dat de tariefsystematiek leidt tot een onverwacht effect waarbij een individuele zorgaanbieder geen kostendekkend tarief ontvangt. In die gevallen kan een zorgaanbieder beroep doen op de hardheidsclausule ervan uitgaande dat de zorgaanbieder doelmatig werkt en aan de overige voorwaarden voldoet. Voor de tijdslijnen verwijzen wij u naar het inkoopbeleid hoofdstuk 7.",
+    "key_assertions": [
+      "must explain the purpose of the tariefsystematiek (reëel tarief voor efficiënt functionerende aanbieder)",
+      "must mention the hardheidsclausule as remedy for onverwacht benadelend effect",
+      "must reference hoofdstuk 7 or section 7.9.5 for the deadlines",
+      "should mention that doelmatig werken is a condition for the hardheidsclausule"
+    ],
+    "source_sections": [
+      "2.8",
+      "7.9.5"
+    ],
+    "notes": "Expert scored 1 with comment: section coupling is wrong because the answer is in chapter 7. The reference answer acknowledges the concern, explains the hardheidsclausule, and refers to chapter 7 for timelines. Section 7.9.5 specifies the 20-day deadline."
+  },
+  {
+    "id": "Q37",
+    "domain": "VV",
+    "section_nr": "4.1",
+    "question": "Bezwaar: In de brief van Zilveren Kruis met kenmerk wordt aangegeven dat we bij de inschrijving voor de Wlz-overeenkomst 2024 en verder (tussen 1 en 28 juli 2023) aan moeten geven of wij akkoord gaan met de voorwaarden gekoppeld aan de essentiële voorzieningen genoemd in hoofdstuk 4. In dezelfde brief staat dat er in september een gesprek georganiseerd wordt door Zilveren Kruis met de geselecteerde zorgaanbieders in de regio om afspraken te maken over het borgen van de essentiële voorzieningen. Bent u het met ons eens dat in juli akkoord vragen en in september verdere afspraken maken in tijdsvolgorde niet passend is? Zo ja, bent u bereid hierop een aanpassing te doen. Zo nee, dan maken wij hiertegen bezwaar. Zorgaanbieders die een rol spelen in essentiële voorzieningen krijgen 0,5% tariefsverhoging. - Moeten zij uit dat halve procent alle genoemde voorzieningen structureel bekostigen?",
+    "golden_answer": "Wij vragen u inderdaad om akkoord te gaan met de voorwaarden. Over de uiteindelijke invulling van de rol maken we in september afspraken. Deze komen in overleg tot stand en wij hanteren daarbij de beginselen van redelijkheid en billijkheid. Wij passen het beleid op dit onderdeel niet aan. Vanaf 2024 gaan we met een beperkt aantal zorgaanbieders per regio gericht in gesprek en maken we afspraken over het borgen van de essentiële voorzieningen.",
+    "key_assertions": [
+      "must confirm the juli akkoord + september invulling sequence",
+      "must mention redelijkheid en billijkheid as guiding principles",
+      "must clearly state that the policy will not be adjusted (niet aanpassen)",
+      "must mention that the actual invulling comes through overleg in september"
+    ],
+    "source_sections": [
+      "4.1"
+    ],
+    "notes": "Expert scored 2. The reference answer from the NvI addresses the objection directly and does not agree to changes. It explains the two-step process (akkoord in juli, invulling in september) and confirms no policy change."
+  },
+  {
+    "id": "Q38",
+    "domain": "VV",
+    "section_nr": "5.4",
+    "question": "Binnen VPT maakt de NHC en het deel m.b.t. duurzaamheid een marginaal onderdeel uit van het tarief. Hoe verhoudt zich dit tot de verplichte verantwoording en planvorming hierover?",
+    "golden_answer": "Als er enkel sprake is van zorg thuis in een ongeclusterde setting, is er geen sprake van een huisvestingscomponent en hoeft daar ook geen verantwoording over afgelegd te worden. Indien zorg geleverd wordt in een geclusterde setting, dan verwachten wij dat er zicht is op de benodigde huisvesting(skosten) en de verduurzaming van het vastgoed. We verwachten bijvoorbeeld van zorgaanbieders die geclusterd VPT leveren, dat zij met de eigenaren van hun vastgoed het gesprek aangaan over verduurzaming.",
+    "key_assertions": [
+      "must distinguish between ongeclusterde setting (geen huisvestingscomponent, geen verantwoording) and geclusterde setting",
+      "must mention that for geclusterd VPT there is an expectation of verduurzaming",
+      "must mention the dialogue with eigenaren van vastgoed for geclusterd VPT",
+      "must NOT apply intramurale verantwoordingseisen on ongeclusterd VPT"
+    ],
+    "source_sections": [
+      "5.4",
+      "4.1"
+    ],
+    "notes": "Expert scored 2 with comment: look up beleidsregel about huisvestingscomponent, also think about adding older NvIs. The key distinction is between geclusterd and ongeclusterd settings."
+  },
+  {
+    "id": "Q39",
+    "domain": "VV",
+    "section_nr": "6.13",
+    "question": "Bij te lage zorginzet VPT, MPT declareren! Waar ligt de grens van een te lage zorginzet?",
+    "golden_answer": "Dit is geen harde grens. De uren voor MPT kunnen ook per periode verschillen. We verwachten van zorgaanbieders dat ze in alle redelijkheid een afweging maken of een VPT een doelmatige en passende leveringsvorm is.",
+    "key_assertions": [
+      "must state that there is no hard/fixed boundary (geen harde grens)",
+      "must mention that MPT uren can vary per period",
+      "must mention the expectation of a reasonable assessment (in alle redelijkheid) by the provider",
+      "should reference doelmatigheid as the guiding principle"
+    ],
+    "source_sections": [
+      "6.13"
+    ],
+    "notes": "Expert scored 3 with comment: please reference where the AI found the answer, refer to documents. Section 6.13 describes the principle of declareren van de best passende en meest doelmatige leveringsvorm."
+  }
+]

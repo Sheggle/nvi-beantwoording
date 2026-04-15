@@ -26,9 +26,114 @@ ROLVERDELING IN DE WLZ-ZORGINKOOP:
 - Kan aanwijzingen geven aan de NZa voor tariefaanpassingen.
 - Zorgkantoren volgen het macrokader; bij structurele problemen gaan zij het gesprek aan met VWS.
 
+LANDELIJKE PROGRAMMA'S EN KADERS:
+- Regionale afspraken sluiten aan bij landelijke programma's zoals het Integraal Zorgakkoord (IZA), het programma Wonen, Ondersteuning en Zorg voor Ouderen (WOZO) en het Gezond en Actief Leven Akkoord (GALA).
+- Efficiënte en doelmatige zorgverlening is het leidende principe bij regionale zorgverdeling.
+
 BELANGRIJKE SCOPE-AFBAKENINGEN:
 - Het zorgkantoor gaat NIET over de maximumtarieven van de NZa. Vragen daarover dienen aan de NZa gesteld te worden.
 - Kostenontwikkelingen (energie, lonen, rente) worden door de NZa verwerkt in de maximumtarieven via indexatie.
 - Het zorgkantoor kan en mag niet meer vergoeden dan 100% van de NHC/NIC-component.
 - Bij het vaststellen van de integrale tarieven houdt de NZa reeds rekening met kosten voor innovatie.
+
+BELANGRIJK JARGON:
+- "Domeinen" in de context van begrotingen en financieel plan: dit verwijst naar de verschillende WETTELIJKE KADERS/FINANCIERINGSSTROMEN (Wlz, Zvw, Wmo, Jeugdwet), NIET naar zorgcategorieën binnen de Wlz. Als gevraagd wordt om kosten/opbrengsten te splitsen per domein, betekent dit: per wettelijk kader splitsen (bijv. Wlz-omzet apart van Zvw-omzet apart van Wmo-omzet).
+- "Richttariefpercentage": het percentage van het NZa-maximumtarief dat het zorgkantoor als uitgangspunt hanteert.
+- "NHC" (Normatieve Huisvestingscomponent): vergoeding voor huisvestingskosten, alleen van toepassing bij intramurale zorg.
+- "NIC" (Normatieve Inventariscomponent): vergoeding voor inventariskosten.
+- "MPT" (Modulair Pakket Thuis): zorg thuis, geen huisvestingscomponent.
+- "VPT" (Volledig Pakket Thuis): volledig pakket thuis, integraal tarief.
+- "Ongeclusterd": zorg geleverd in zelfstandige woningen (niet op een zorglocatie) — geen NHC-component.
+- "Geclusterd": zorg geleverd op/nabij een zorglocatie — wel NHC-component.
+
+NZA — PRESTATIECODES EN BELEIDSREGELS:
+- De NZa stelt de prestatiecodes vast en bepaalt de inhoud daarvan. Het zorgkantoor kan de prestatiecodes en de hoogte daarvan niet zelf wijzigen.
+- Zorgprestaties, beleidsregels en prestatiebeschrijvingen zijn te vinden op de website van de NZa (open.nza.nl).
+- De NZa publiceert jaarlijks rond 1 juli de definitieve maximumtarieven.
+- Zorgkantoren moeten vóór 15 november budgetformulieren bij de NZa indienen — dit creëert tijdsdruk in de inkoopprocedure.
+
+VOORSCHRIFT ZORGTOEWIJZING:
+- Bijlage 6 van het inkoopbeleid betreft het Voorschrift Zorgtoewijzing.
+- Dit wordt jaarlijks geactualiseerd door de NZa op geldende wet- en regelgeving.
+- Het Voorschrift bevat GEEN inkoopvoorwaarden en valt buiten de NvI-procedure.
+- De nieuwe versie wordt uiterlijk op 1 december gepubliceerd.
+- Het Voorschrift bevat o.a. een vertaaltabel voor sectorvreemde prestaties en definities van zorgprestaties.
+
+HARDHEIDSCLAUSULE:
+- De tariefsystematiek beoogt een reëel tarief te bieden voor een redelijk efficiënt functionerende zorgaanbieder.
+- De hardheidsclausule is bedoeld als remedie voor een onverwacht benadelend effect van de tariefsystematiek, voor individuele zorgaanbieders die ondanks doelmatig werken de zorg niet binnen het richttarief kunnen leveren.
+- Doelmatig werken is een voorwaarde voor een beroep op de hardheidsclausule.
+- De procedure en deadlines staan beschreven in hoofdstuk 7 / sectie 7.9.5 van het inkoopbeleid.
+
+VASTGOED (NHC/ONGECLUSTERD/GECLUSTERD):
+- "Voldoende geschikt vastgoed" = voldoende vastgoed dat voldoet aan vereisten op het gebied van veiligheid, duurzaamheid en geschiktheid voor Wlz-zorg.
+- Ongeclusterde setting: zorg in zelfstandige woningen, GEEN huisvestingscomponent (NHC) — dus geen NHC-verantwoording.
+- Geclusterde setting: zorg op/nabij een zorglocatie, WEL NHC-component — hier geldt verantwoording over duurzaamheid en vastgoed.
+- NHC-verantwoording geldt alleen voor intramurale zorg en geclusterd VPT.
+- Bij uitsluitend MPT/VPT in ongeclusterde setting is de huisvestingscomponent niet van toepassing.
+- Bij coöperaties is de coöperatie het aanspreekpunt voor het zorgkantoor.
+
+TARIEFPERCENTAGES EN UITZONDERINGEN:
+- Richttariefpercentages gelden voor de gehele beleidsperiode 2024-2026 tenzij anders vermeld.
+- Uitzondering: de prestatie 7VG (verblijf met gedragsproblematiek), waarvoor kostenonderzoeken nog lopen.
+- Er is geen overzicht van wijzigingen t.o.v. het voorgaande zorginkoopbeleid voorzien.
+
+SPIEGELINFORMATIE:
+- Zilveren Kruis stelt spiegelinformatie beschikbaar waarmee zorgaanbieders worden vergeleken.
+- De analyse en afspraken over uitkomsten maken onderdeel uit van het inkoopgesprek.
+- De analyse bevat geen herleidbare bedrijfsvoeringsinformatie.
+- Het gaat om gezamenlijke duiding (zorgaanbieder + inkoper) van de data, waarbij ook verklarende factoren worden meegenomen.
+
+PROCEDURELE KENNIS:
+- Het zorginkoopbeleid 2024-2026 kan tweemaal met een jaar verlengd worden (naar 2027 en 2028). Dit is een eenzijdige bevoegdheid van het zorgkantoor. Na afloop kunnen zorgaanbieders opnieuw inschrijven.
+- Zilveren Kruis beoordeelt in 2026 of het beleid nog passend is, in lijn met ontwikkelingen in de GGZ/GZ/VV en maatschappelijke trends.
+- Het zorgkantoor herijkt elk kalenderjaar of het zorginkoopbeleid nog passend is, in afstemming met branchevertegenwoordigers en zorgaanbieders.
+- Als er aanvullend inkoopbeleid wordt gepubliceerd, wordt er in principe een NvI ingericht.
+- Na inschrijving heeft het zorgkantoor de bevoegdheid (maar niet de verplichting) om een zorgaanbieder te vragen zijn inschrijving toe te lichten. De zorgaanbieder heeft dan vijf werkdagen om te reageren. Uit deze toelichting kunnen geen rechten of verplichtingen worden afgeleid.
+- Het NvI-format is vastgesteld; het is niet mogelijk om een voorwoord of managementsamenvatting toe te voegen. Vragen dienen bij de betreffende sectie gesteld te worden.
+
+INSCHRIJVING EN CONTRACTEERPROCES:
+- Bij de inschrijving wordt in juli akkoord gevraagd met de voorwaarden; de daadwerkelijke invulling van de afspraken volgt in overleg in september.
+- Het beleid wordt niet aangepast op basis van individuele bezwaren; het proces is gebaseerd op redelijkheid en billijkheid.
+
+SECTORVREEMDE PRESTATIES:
+- Met ingang van 2024 worden sectorvreemde prestaties vergoed op basis van het tariefpercentage van de sector van de cliëntindicatie.
+- De werkwijze wordt bepaald in overleg met de zorginkoper.
+- Het Voorschrift Zorgtoewijzing bevat een vertaaltabel als alternatief voor omzetting.
+- Omzetting naar de eigen sector is nog steeds mogelijk als de aanbieder de zorg niet binnen het sectorvreemde tarief kan leveren.
+
+TRANSITIEMIDDELEN EN PROGRAMMAMANAGEMENT:
+- Zilveren Kruis bekostigt het programmamanagement van regionale samenwerkingsinitiatieven uit de transitiemiddelen (regionaal stimuleringsbudget). Zie sectie 2.1 (pilot 'regio van de toekomst') en sectie 2.3 van het inkoopbeleid.
+- Transitiemiddelen worden ingezet voor samenwerkingsafspraken in de regio.
+- Koploper-financiering voor innovatie komt eveneens uit de transitiemiddelen.
+
+VERANTWOORDING EN ADMINISTRATIEVE LASTEN:
+- Het uitgangspunt is om de verantwoordingslast zoveel mogelijk te beperken.
+- Het niveau van verantwoording hangt af van de gemaakte afspraken en kan per regio en afspraak verschillen.
+- Verantwoording wordt vastgelegd bij het maken van de afspraken.
+
+VPT/MPT GRENS:
+- Er is geen harde grens voor wanneer VPT-zorg overgaat naar MPT-declaratie.
+- MPT-uren kunnen per periode variëren afhankelijk van de zorgbehoefte.
+- In alle redelijkheid wordt verwacht dat de zorgaanbieder een passende beoordeling maakt.
+- Doelmatigheid is het leidende principe bij het bepalen van de juiste zorginzet.
 """.strip()
+
+PROCEDURAL_KNOWLEDGE_BLOCK = """
+
+VOLUMEPLAFOND (INTRAMURALE ZORG):
+- Het volumeplafond is het maximaal aantal te declareren dagen voor intramurale zorg per jaar.
+- Het volumeplafond is NIET van toepassing op geclusterde woonvormen die uitsluitend VPT bieden.
+- Het volumeplafond heeft betrekking op alle intramurale zorgsoorten (niet alleen VPT/MPT).
+- De ZZP0 (verblijfscomponent niet-geïndiceerde partner) valt binnen het intramurale volumeplafond.
+- Het volumeplafond wordt jaarlijks vastgesteld op basis van recente declaratiegegevens.
+- Er is géén sprake van een splitsing in het Wlz-budget; ook intramurale zorg is persoonsvolgend.
+
+HERSCHIKKING:
+- De tussentijdse herschikking heeft betrekking op ALLE zorgsoorten, inclusief intramurale zorg — niet alleen VPT en MPT.
+- Meer over de wijze van herschikking staat beschreven in het inkoopbeleid (paragraaf 9.6 voor V&V).
+
+ESSENTIËLE VOORZIENINGEN — TOESLAG:
+- De 0,5% opslag voor zorgaanbieders met een rol bij essentiële voorzieningen geldt alleen voor V&V-prestaties.
+- De opslag geldt NIET voor sectorvreemde zorg.
+"""

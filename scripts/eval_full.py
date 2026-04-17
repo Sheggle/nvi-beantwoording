@@ -57,9 +57,7 @@ async def judge_answer(
     Returns {score: 0-3, reasoning: str}.
     Score: 0=wrong/irrelevant, 1=partially correct, 2=mostly correct, 3=fully correct.
     """
-    from openai import AsyncOpenAI
-
-    client = AsyncOpenAI(api_key=settings.openai_api_key)
+    from src.config import openai_client as client
 
     prompt = f"""\
 Je vergelijkt een gegenereerd antwoord met het expert-antwoord op een vraag over zorginkoop.
@@ -263,9 +261,6 @@ async def main():
         domain_filter = args[idx + 1].upper()
 
     settings = Settings()
-    if not settings.openai_api_key:
-        print("Error: OPENAI_API_KEY not set")
-        sys.exit(1)
 
     clean_data = "--no-clean" not in args
 

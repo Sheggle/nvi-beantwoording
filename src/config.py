@@ -2,6 +2,8 @@
 
 import os
 from pathlib import Path
+
+from openai import AsyncOpenAI
 from pydantic import BaseModel, Field
 
 
@@ -62,3 +64,12 @@ class Settings(BaseModel):
 
     class Config:
         arbitrary_types_allowed = True
+
+
+settings = Settings()
+
+if settings.openai_api_key:
+    openai_client: AsyncOpenAI = AsyncOpenAI(api_key=settings.openai_api_key)
+else:
+    from mipy.openai import create_async_client
+    openai_client = create_async_client()

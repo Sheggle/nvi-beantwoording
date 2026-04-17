@@ -198,9 +198,6 @@ async def main():
     domains = [domain_filter] if domain_filter else ["GGZ", "GZ", "VV"]
 
     settings = Settings()
-    if not settings.openai_api_key:
-        print("Error: OPENAI_API_KEY not set")
-        sys.exit(1)
 
     print(f"Evaluating against expert feedback for domains: {', '.join(domains)}")
     data = await run_eval(domains, settings)

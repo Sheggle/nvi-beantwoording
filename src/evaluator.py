@@ -7,7 +7,7 @@ from typing import Callable
 from openai import AsyncOpenAI
 
 from .models import EvaluationResult, GeneratedAnswer
-from .config import Settings
+from .config import Settings, openai_client
 
 
 class TokenBucket:
@@ -51,9 +51,9 @@ Beoordeel de correspondentie op een schaal van 1-5:
 Let op: het gaat om inhoudelijke correspondentie, niet om woordelijke overeenkomst.
 Een kort referentieantwoord en een langer gegenereerd antwoord kunnen nog steeds score 5 krijgen als de conclusie hetzelfde is."""
 
-    def __init__(self, settings: Settings | None = None):
+    def __init__(self, settings: Settings | None = None, client: AsyncOpenAI | None = None):
         self.settings = settings or Settings()
-        self.client = AsyncOpenAI(api_key=self.settings.openai_api_key)
+        self.client = client or openai_client
         self._semaphore = asyncio.Semaphore(self.settings.max_concurrent_requests)
         self._token_bucket = TokenBucket(
             rate=self.settings.requests_per_minute / 60.0,

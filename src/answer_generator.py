@@ -14,7 +14,7 @@ from .models import (
     Trajectory,
     VerificationResponse,
 )
-from .config import Settings
+from .config import Settings, openai_client
 from .section_matcher import SectionMatcher, MatchResult
 from .supplementary_matcher import SupplementaryMatcher
 from .background_context import BACKGROUND_CONTEXT, PROCEDURAL_KNOWLEDGE_BLOCK
@@ -278,9 +278,9 @@ Richtlijnen:
 
     MAX_RETRIEVAL_ITERATIONS = 5
 
-    def __init__(self, settings: Settings | None = None):
+    def __init__(self, settings: Settings | None = None, client: AsyncOpenAI | None = None):
         self.settings = settings or Settings()
-        self.client = AsyncOpenAI(api_key=self.settings.openai_api_key)
+        self.client = client or openai_client
         self._semaphore = asyncio.Semaphore(self.settings.max_concurrent_requests)
         self._token_bucket = TokenBucket(
             rate=self.settings.requests_per_minute / 60.0,

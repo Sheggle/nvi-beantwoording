@@ -44,9 +44,7 @@ async def check_assertions(
 
     Returns list of {assertion, passed, reasoning}.
     """
-    from openai import AsyncOpenAI
-
-    client = AsyncOpenAI(api_key=settings.openai_api_key)
+    from src.config import openai_client as client
     results = []
 
     for assertion in golden["key_assertions"]:
@@ -232,9 +230,6 @@ async def main():
         domain_filter = args[idx + 1].upper()
 
     settings = Settings()
-    if not settings.openai_api_key:
-        print("Error: OPENAI_API_KEY not set")
-        sys.exit(1)
 
     data = await run_golden_eval(settings, domain_filter)
     print_results(data)

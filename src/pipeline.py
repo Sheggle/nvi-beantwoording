@@ -226,11 +226,6 @@ async def main():
 
     settings = Settings()
 
-    # Validate API key
-    if not settings.openai_api_key:
-        print("Error: OPENAI_API_KEY environment variable not set")
-        sys.exit(1)
-
     # List available domains
     available = DataLoader.list_available_domains(settings.parsed_data_path)
     print(f"Available domains: {', '.join(available)}")
